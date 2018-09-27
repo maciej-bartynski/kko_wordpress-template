@@ -1,4 +1,5 @@
 import  axios from "axios";
+import $ from 'jquery';
 
 async function fetching(){
     let res = await axios.get('https://jsonplaceholder.typicode.com/todos/1');
@@ -18,3 +19,7 @@ let Testing = class {
 
 let Person = new Testing("Imie", "Nazwisko");
 console.log(Person.testThisClass());
+
+$(".jquerytest").click(function () {
+    alert("Handler for .click() called.");
+});
