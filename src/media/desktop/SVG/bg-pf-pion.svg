@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1364 1772">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        fill: #ffca1b;
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <g id="bg-pf-pion" transform="translate(-132 -11902)">
+    <rect id="Rectangle_4475" data-name="Rectangle 4475" class="cls-1" width="674" height="577" transform="translate(822 13097)"/>
+    <rect id="Rectangle_4476" data-name="Rectangle 4476" class="cls-1" width="674" height="577" transform="translate(822 12499)"/>
+    <rect id="Rectangle_4477" data-name="Rectangle 4477" class="cls-1" width="674" height="577" transform="translate(132 13097)"/>
+    <rect id="Rectangle_4478" data-name="Rectangle 4478" class="cls-1" width="674" height="578" transform="translate(132 12499)"/>
+    <rect id="Rectangle_4484" data-name="Rectangle 4484" class="cls-2" width="674" height="577" transform="translate(132 11902)"/>
+    <rect id="Rectangle_4490" data-name="Rectangle 4490" class="cls-1" width="674" height="577" transform="translate(821.999 11902)"/>
+    <rect id="bg-pf-pion-tinta" class="cls-3" width="674" height="577" transform="translate(132 11902)"/>
+    <rect id="bg-pf-pion-1" class="cls-1" width="674" height="577" transform="translate(132 11902)"/>
+  </g>
+</svg>

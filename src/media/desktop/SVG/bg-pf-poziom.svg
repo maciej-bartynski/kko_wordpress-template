@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1640 934">
+  <defs>
+    <style>
+      .cls-1, .cls-3 {
+        fill: #e6e6e6;
+      }
+
+      .cls-2 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        opacity: 0.8;
+      }
+    </style>
+  </defs>
+  <g id="bg-pf-poziom" transform="translate(-140 -10839)">
+    <rect id="bg-pf-poziom-2" data-name="bg-pf-poziom" class="cls-1" width="536" height="459" transform="translate(1244 10839)"/>
+    <rect id="Rectangle_4437" data-name="Rectangle 4437" class="cls-1" width="536" height="459" transform="translate(1244 11314)"/>
+    <rect id="Rectangle_4433" data-name="Rectangle 4433" class="cls-1" width="536" height="459" transform="translate(692 10839)"/>
+    <rect id="Rectangle_4436" data-name="Rectangle 4436" class="cls-1" width="536" height="459" transform="translate(692 11314)"/>
+    <rect id="Rectangle_4434" data-name="Rectangle 4434" class="cls-2" width="536" height="459" transform="translate(140 10839)"/>
+    <rect id="Rectangle_4435" data-name="Rectangle 4435" class="cls-1" width="536" height="459" transform="translate(140 11314)"/>
+    <rect id="Rectangle_4438" data-name="Rectangle 4438" class="cls-3" width="536" height="459" transform="translate(140 10839)"/>
+  </g>
+</svg>

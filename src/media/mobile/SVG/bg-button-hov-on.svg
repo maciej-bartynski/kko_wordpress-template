@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 252 84">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #42a319;
+      }
+
+      .cls-2 {
+        filter: url(#bg-button-hov_on);
+      }
+    </style>
+    <filter id="bg-button-hov_on" x="0" y="0" width="252" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="8" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-opacity="0.102"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g class="cls-2" transform="matrix(1, 0, 0, 1, 0, 0)">
+    <rect id="bg-button-hov_on-2" data-name="bg-button-hov/on" class="cls-1" width="216" height="48" rx="24" transform="translate(18 10)"/>
+  </g>
+</svg>

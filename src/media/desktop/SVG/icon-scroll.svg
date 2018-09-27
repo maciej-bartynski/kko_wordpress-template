@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #4cbc1d;
+      }
+    </style>
+  </defs>
+  <g id="icon-scroll" transform="translate(-420 -649)">
+    <path id="iconmonstr-mouse-6" class="cls-1" d="M11.662,2a6.006,6.006,0,0,1,6,6v8a6,6,0,0,1-12,0V8A6.006,6.006,0,0,1,11.662,2Zm0-2a8,8,0,0,0-8,8v8a8,8,0,0,0,16,0V8A8,8,0,0,0,11.662,0Zm0,9c-.829,0-1-1.172-1-2s.171-1,1-1,2,.172,2,1A2.5,2.5,0,0,1,11.662,9Z" transform="translate(416.338 649)"/>
+  </g>
+</svg>

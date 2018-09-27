@@ -1,0 +1,14 @@
+@import './style/simple.css';
+
+$red: red;
+@mixin color () {
+    color: $red;
+    text-transform: uppercase;
+}
+
+* {
+   @include color;
+}
+h1 {
+    @include color;
+}
