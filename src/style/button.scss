@@ -1,0 +1,15 @@
+.main-button {
+    width: 300px;
+    position: relative;
+    img{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -85%);
+    }
+}
