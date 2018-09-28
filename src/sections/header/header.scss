@@ -1,0 +1,35 @@
+#header-02{
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('./media/desktop/SVG/ilu-hero.svg');
+    background-size: 100vh auto;
+    background-repeat: no-repeat;
+    background-position: right;
+    .header--positioner{
+        max-width: 1640px;
+        margin: 0 auto;
+        width: 100%;
+        min-height: 100vh;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        .header--container{
+            margin-top: -300px;
+            width: 400px;
+        }
+       
+    }
+}
+
+/*
+
+<div class="header--positioner">
+<div class="header--container">
+<h1 class="spectral">Witaj w Klubie Komunikacji Odpowiedzialnej !
+</h1><p>KKO to przestrzeń dla istotnych społecznie inicjatyw. Tutaj otrzymacie wsparcie,
+które pomoże Wam</p>
+<a href="#"class="button">Skontaktuj się</a>
+</div><img class="header--banner"alt="hero"src="./media/desktop/SVG/ilu-hero.svg"/>
+</div>
+
+*/

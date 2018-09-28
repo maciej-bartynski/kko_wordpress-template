@@ -2,4 +2,4 @@
 import './index.scss';
 //scripts
 import './components/react.jsx';
-import './sections/navbar';
+import './sections/navbar/navbar.js';

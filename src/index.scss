@@ -6,8 +6,10 @@
 //scss components
 @import './style/button.scss';
 @import './style/titles.scss';
+@import './style/paragraph.scss';
 //sections
-@import './sections/navbar.scss';
+@import './sections/navbar/navbar.scss';
+@import './sections/header/header.scss';
 
 
 //global:

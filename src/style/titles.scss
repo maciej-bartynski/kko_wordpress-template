@@ -2,10 +2,12 @@ h1.spectral{
     font-family: $spectral;
     font-size: 42px;
     @include spectral-bold;
+    color: $dark;
 }
 
 h2.spectral {
     font-family: $spectral;
     font-size: 32px;
     @include spectral-bold;
+    color: $dark;
 }

@@ -1,0 +1,7 @@
+.excerpt {
+    color: $dark;
+    font-family: $sans;
+    @include sans-light;
+    font-size: 24px;
+    margin: 50px 0;
+}
