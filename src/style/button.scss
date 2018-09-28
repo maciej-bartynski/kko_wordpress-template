@@ -1,15 +1,34 @@
-.main-button {
-    width: 300px;
-    position: relative;
-    img{
-        width: 100%;
-        margin: 0;
-        padding: 0;
+a.button {
+    width: 260px;
+    height: 48px;
+    border-radius: 30px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: $awaits;
+    border: solid 1px $btnborder;
+    border-style: hidden; 
+    
+    font-size: 18px;
+    font-family: $sans;
+    @include sans-semibold;
+    color: $light;
+    
+    @include button-awaits-shadow;
+    text-decoration: none;
+    &:hover{
+        background-color: $hover;
+        @include button-hover-shadow;
+        text-decoration: none;
     }
-    span {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -85%);
+    &:active{
+        background-color: $hover;
+        @include button-active-shadow;
+        text-decoration: none;
+    }
+    @media only screen and (max-width: 900px){
+        width: 216px;
     }
 }
