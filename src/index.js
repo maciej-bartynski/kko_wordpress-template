@@ -1,4 +1,5 @@
+//my scss (do not change order of importing styles!)
 import './index.scss';
-import 'materialize-css/dist/js/materialize.min.js';
+//scripts
 import './components/react.jsx';
-import './scripts/alert.js';
+import './sections/navbar';

@@ -1,6 +1,24 @@
+//do not change order of importing: 
+//fonts:
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext');
-@import '../node_modules/materialize-css/dist/css/materialize.min.css';
+//variables
 @import './style/variables.scss';
-
+//scss components
 @import './style/button.scss';
 @import './style/titles.scss';
+//sections
+@import './sections/navbar.scss';
+
+
+//global:
+
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+}
+header, section {
+    min-height: 100vh;
+    width: 100%;
+}
