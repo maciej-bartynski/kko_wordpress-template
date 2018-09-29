@@ -4,6 +4,8 @@
     @include sans-light;
     font-size: 24px;
     line-height: 40px;
+    margin: 0;
+    padding:0;
 }
 
 .footinfo {
@@ -12,4 +14,6 @@
     @include serif-semibold;
     font-size: 24px;
     line-height: 40px;
+    margin: 0;
+    padding:0;
 }

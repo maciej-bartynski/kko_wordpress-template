@@ -1,12 +1,14 @@
+
 #header-02{
     width: 100%;
     display: flex;
     justify-content: space-between;
     padding-left: 7.295%;
     position: relative;
+    min-height: 900px;
     .header-02--container {  
         padding: 185px 0 73px 0;
-        width: 540px;
+        width: 600px;
     }
     img {
         position: absolute;
@@ -19,6 +21,10 @@
         object-fit: contain;
         -o-object-position: right;
         object-position: right;
+        @media only screen and (max-width: 1300px){
+            max-width: 1227px;
+            width: 70%;
+        }
     }
 }
 
@@ -33,12 +39,20 @@
             margin: 0;
             padding: 0;
             margin-bottom: 32px;
+            @media only screen and (max-width: 1300px) {
+                width: 50%;
+            }
         }
         .header-02_button--positioner {
             margin-bottom: 197px;
+            @media only screen and (max-width: 1300px) {
+                margin-bottom: 100px;
+            }
         }
         .header-02_footer--positioner{
+            margin-bottom: 14px;
             p {margin: 0; padding: 0;}
             span {color: $activeitem}
         }
     }
+}
