@@ -5,6 +5,10 @@ h1.spectral{
     color: $dark;
     line-height: 70px;
     margin: 0; padding:0;
+    @media only screen and (max-width: 899px){
+        font-size: 32px;
+        line-height: 50px;
+    }
 }
 
 h2.spectral {

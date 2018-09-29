@@ -6,6 +6,10 @@
     line-height: 40px;
     margin: 0;
     padding:0;
+    @media only screen and (max-width: 899px) {
+        font-size: 20px;
+        line-height: 33px;
+    }
 }
 
 .footinfo {
@@ -16,4 +20,8 @@
     line-height: 40px;
     margin: 0;
     padding:0;
+    @media only screen and (max-width: 899px) {
+        font-size: 14px;
+        line-height: 23px;
+    }
 }

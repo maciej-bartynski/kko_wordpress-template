@@ -1,58 +1,117 @@
-
-#header-02{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding-left: 7.295%;
-    position: relative;
-    min-height: 900px;
-    .header-02--container {  
-        padding: 185px 0 73px 0;
-        width: 600px;
+@media only screen and (max-width: 899px) {
+    #header-02{
+        width: 100%;
+        padding-left: 2.25%;
+        .header-02--container {  
+            width: 100%;
+        }
+        img.mobile {
+            width: 100%;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -o-object-position: right;
+            object-position: right;
+        }
+        img.desktop{
+        
+                display: none;
+        
+        }
     }
-    img {
-        position: absolute;
-        z-index: -1;
-        top:0;
-        right: 0;
-        width: 1227px;
-        height: 900px;
-        -o-object-fit: contain;
-        object-fit: contain;
-        -o-object-position: right;
-        object-position: right;
-        @media only screen and (max-width: 1300px){
-            max-width: 1227px;
-            width: 70%;
+
+    #header-02 {
+        .header-02--container {
+            .header-02_title{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 24px;
+                width:100%;
+            }
+            .header-02_excerpt {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 48px;
+                width:100%;
+            }
+            .header-02_button--positioner {
+                margin-bottom: 197px;
+                width:100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                @media only screen and (max-width: 1300px) {
+                    margin-bottom: 10px;
+                }
+            }
+            .header-02_footer--positioner{
+                width:100%;
+                margin-bottom: 14px;
+                p {margin: 0; padding: 0; text-align: center;}
+                span {color: $activeitem}
+            }
         }
     }
 }
 
-#header-02 {
-    .header-02--container {
-        .header-02_title{
-            margin: 0;
-            padding: 0;
-            margin-bottom: 52px;
+@media only screen and (min-width: 900px){
+    #header-02{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 7.295%;
+        position: relative;
+        min-height: 900px;
+        .header-02--container {  
+            padding: 185px 0 73px 0;
+            width: 600px;
         }
-        .header-02_excerpt {
-            margin: 0;
-            padding: 0;
-            margin-bottom: 32px;
-            @media only screen and (max-width: 1300px) {
-                width: 50%;
+        img.mobile {
+            display: none;
+        }
+        img.desktop {
+            position: absolute;
+            z-index: -1;
+            top:0;
+            right: 0;
+            width: 1227px;
+            height: 900px;
+            -o-object-fit: contain;
+            object-fit: contain;
+            -o-object-position: right;
+            object-position: right;
+            @media only screen and (max-width: 1300px){
+                max-width: 1227px;
+                width: 70%;
             }
         }
-        .header-02_button--positioner {
-            margin-bottom: 197px;
-            @media only screen and (max-width: 1300px) {
-                margin-bottom: 100px;
+    }
+
+    #header-02 {
+        .header-02--container {
+            .header-02_title{
+                margin: 0;
+                padding: 0;
+                margin-bottom: 52px;
             }
-        }
-        .header-02_footer--positioner{
-            margin-bottom: 14px;
-            p {margin: 0; padding: 0;}
-            span {color: $activeitem}
+            .header-02_excerpt {
+                margin: 0;
+                padding: 0;
+                margin-bottom: 32px;
+                @media only screen and (max-width: 1300px) {
+                    width: 50%;
+                }
+            }
+            .header-02_button--positioner {
+                margin-bottom: 197px;
+                @media only screen and (max-width: 1300px) {
+                    margin-bottom: 100px;
+                }
+            }
+            .header-02_footer--positioner{
+                margin-bottom: 14px;
+                p {margin: 0; padding: 0;}
+                span {color: $activeitem}
+            }
         }
     }
 }
