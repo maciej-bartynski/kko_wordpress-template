@@ -1,0 +1,151 @@
+#kompetencje-04{
+    width:100%;
+    min-height: 0;
+    margin-bottom: 200px;//do usunięcia!!!!!
+
+   
+        h1 {
+            text-align: center;
+            width: 100%;
+            margin: 50px 0 41px 0;
+        }
+        .kompetencje-04--positioner {
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr;
+            grid-column-gap: 16px;
+            .tilt--positioner {
+                padding: 0 0 0 $general-desktop-margin;
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: auto;
+                grid-row-gap: 16px;
+                grid-column-gap: 16px;
+                .tilt--container {
+                    @include tilt-basic-shadow;
+                    position: relative;
+                    background-color: $light;
+                    padding: 0 16px;
+                    &:nth-of-type(1){
+                        z-index: 1;
+                    }
+                    &:nth-of-type(2) {
+                        @media only screen and (max-width: 899px) {
+                            display: none;
+                        }
+                    }
+                    &:nth-of-type(3) {
+                        @media only screen and (max-width: 899px) {
+                            display: none;
+                        }
+                    }
+                    &:nth-of-type(4) {
+                        @media only screen and (max-width: 899px) {
+                            display: none;
+                        }
+                    }
+                    h3 {
+                        text-align: center;
+                        width: 100%;
+                        margin-top: 48px;
+                    }
+                    ul {
+                        margin: 58px auto 58px auto;
+                        padding: 0;
+                        li {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 200%;
+                            color: $dark;
+                            list-style-position: inside;
+                        }
+                        width: 212px;
+                    }
+                    a {
+                        margin: 0 auto 20px auto;
+                    }
+                }
+            }
+            .img--positioner{
+                @media only screen and (max-width: 899px){
+                    display: none;
+                }
+            }
+        }
+    
+
+
+    @media only screen and (min-width: 900px){
+        h1 {
+            text-align: center;
+            width: 100%;
+            margin: 50px 0 41px 0;
+        }
+        .kompetencje-04--positioner {
+            width: 100%;
+            display: grid;
+            grid-template-rows: auto;
+            grid-template-columns: 1fr 1fr;
+            grid-column-gap: 16px;
+            .tilt--positioner {
+                padding: 0 0 0 $general-desktop-margin;
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: auto auto;
+                grid-row-gap: 16px;
+                grid-column-gap: 16px;
+                .tilt--container {
+                    @include tilt-basic-shadow;
+                    position: relative;
+                    background-color: $light;
+                    padding: 0 16px;
+                    &:nth-of-type(1){
+                        z-index: 1;
+                    }
+                    &:nth-of-type(2) {
+                        z-index: 1;
+                    }
+                    &:nth-of-type(3) {
+                        z-index: 2;
+                    }
+                    &:nth-of-type(4) {
+                        z-index: 2;
+                    }
+                    h3 {
+                        text-align: center;
+                        width: 100%;
+                        margin-top: 48px;
+                    }
+                    ul {
+                        margin: 58px auto 58px auto;
+                        padding: 0;
+                        li {
+                            margin: 0;
+                            padding: 0;
+                            font-size: 200%;
+                            color: $dark;
+                            list-style-position: inside;
+                        }
+                        width: 212px;
+                    }
+                    a {
+                        margin: 0 auto 20px auto;
+                    }
+                }
+            }
+            .img--positioner{
+                position: relative;
+                z-index: -1;
+                .img--container{
+                     position: absolute;
+                     z-index: 0;
+                     bottom: 0;
+                     right: 0;
+                     width: 100%;
+                }
+            }
+        }
+    }
+}
+
