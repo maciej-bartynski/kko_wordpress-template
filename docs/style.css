@@ -49,7 +49,19 @@ h2.spectral {
   font-family: "Spectral", serif;
   font-size: 32px;
   font-weight: 700;
-  color: #333333; }
+  color: #333333;
+  line-height: 50px;
+  margin: 0;
+  padding: 0; }
+
+h3.spectral {
+  font-family: "Spectral", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 40px;
+  margin: 0;
+  padding: 0; }
 
 .excerpt {
   color: #333333;
@@ -63,6 +75,24 @@ h2.spectral {
     .excerpt {
       font-size: 20px;
       line-height: 33px; } }
+
+.paragraph {
+  color: #333333;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0; }
+
+.list-item {
+  color: #333333;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  margin: 0;
+  padding: 0; }
 
 .footinfo {
   color: #333333;
@@ -378,6 +408,162 @@ h2.spectral {
       padding: 0; }
     #header-02 .header-02--container .header-02_footer--positioner span {
       color: #61D375; } }
+
+#idea-03 {
+  min-height: 0;
+  margin-top: 42px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start; }
+  #idea-03 img {
+    width: 90%; }
+  #idea-03 .idea-03--container {
+    padding: 0 2.25% 26px 2.25%;
+    width: 100%; }
+    #idea-03 .idea-03--container h2 {
+      text-align: center; }
+    #idea-03 .idea-03--container p {
+      text-align: center; }
+
+@media only screen and (min-width: 900px) {
+  #idea-03 {
+    margin-top: 151px;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 7fr 5fr;
+    grid-column-gap: 16px; }
+    #idea-03 img {
+      width: 100%;
+      order: 1; }
+    #idea-03 .idea-03--container {
+      padding: 0;
+      order: 2;
+      width: 100%;
+      height: 100%;
+      max-width: 400px;
+      padding-top: 5vh; }
+      #idea-03 .idea-03--container h2 {
+        text-align: left; }
+      #idea-03 .idea-03--container p {
+        text-align: left; } }
+
+#kompetencje-04 {
+  width: 100%;
+  min-height: 0;
+  margin-bottom: 200px; }
+  #kompetencje-04 h1 {
+    text-align: center;
+    width: 100%;
+    margin: 50px 0 41px 0; }
+  #kompetencje-04 .kompetencje-04--positioner {
+    width: 100%;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 1fr;
+    grid-column-gap: 16px; }
+    #kompetencje-04 .kompetencje-04--positioner .tilt--positioner {
+      padding: 0 0 0 7.295%;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: auto;
+      grid-row-gap: 16px;
+      grid-column-gap: 16px; }
+      #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container {
+        -webkit-box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+        box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+        position: relative;
+        background-color: #FFFFFF;
+        padding: 0 16px; }
+        #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(1) {
+          z-index: 1; }
+        @media only screen and (max-width: 899px) {
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(2) {
+            display: none; } }
+        @media only screen and (max-width: 899px) {
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(3) {
+            display: none; } }
+        @media only screen and (max-width: 899px) {
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(4) {
+            display: none; } }
+        #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container h3 {
+          text-align: center;
+          width: 100%;
+          margin-top: 48px; }
+        #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container ul {
+          margin: 58px auto 58px auto;
+          padding: 0;
+          width: 212px; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container ul li {
+            margin: 0;
+            padding: 0;
+            font-size: 200%;
+            color: #333333;
+            list-style-position: inside; }
+        #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container a {
+          margin: 0 auto 20px auto; }
+    @media only screen and (max-width: 899px) {
+      #kompetencje-04 .kompetencje-04--positioner .img--positioner {
+        display: none; } }
+  @media only screen and (min-width: 900px) {
+    #kompetencje-04 h1 {
+      text-align: center;
+      width: 100%;
+      margin: 50px 0 41px 0; }
+    #kompetencje-04 .kompetencje-04--positioner {
+      width: 100%;
+      display: grid;
+      grid-template-rows: auto;
+      grid-template-columns: 1fr 1fr;
+      grid-column-gap: 16px; }
+      #kompetencje-04 .kompetencje-04--positioner .tilt--positioner {
+        padding: 0 0 0 7.295%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-row-gap: 16px;
+        grid-column-gap: 16px; }
+        #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container {
+          -webkit-box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+          -moz-box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
+          position: relative;
+          background-color: #FFFFFF;
+          padding: 0 16px; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(1) {
+            z-index: 1; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(2) {
+            z-index: 1; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(3) {
+            z-index: 2; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container:nth-of-type(4) {
+            z-index: 2; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container h3 {
+            text-align: center;
+            width: 100%;
+            margin-top: 48px; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container ul {
+            margin: 58px auto 58px auto;
+            padding: 0;
+            width: 212px; }
+            #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container ul li {
+              margin: 0;
+              padding: 0;
+              font-size: 200%;
+              color: #333333;
+              list-style-position: inside; }
+          #kompetencje-04 .kompetencje-04--positioner .tilt--positioner .tilt--container a {
+            margin: 0 auto 20px auto; }
+      #kompetencje-04 .kompetencje-04--positioner .img--positioner {
+        position: relative;
+        z-index: -1; }
+        #kompetencje-04 .kompetencje-04--positioner .img--positioner .img--container {
+          position: absolute;
+          z-index: 0;
+          bottom: 0;
+          right: 0;
+          width: 100%; } }
 
 * {
   box-sizing: border-box; }
