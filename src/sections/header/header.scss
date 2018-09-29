@@ -1,35 +1,70 @@
 #header-02{
     width: 100%;
-    min-height: 100vh;
-    background-image: url('./media/desktop/SVG/ilu-hero.svg');
-    background-size: 100vh auto;
-    background-repeat: no-repeat;
-    background-position: right;
-    .header--positioner{
-        max-width: 1640px;
-        margin: 0 auto;
-        width: 100%;
-        min-height: 100vh;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        .header--container{
-            margin-top: -300px;
-            width: 400px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 7.295%;
+    position: relative;
+    .header-02--container {  
+        padding: 185px 0 73px 0;
+    }
+    img {
+        position: absolute;
+        z-index: -1;
+        top:0;
+        right: 0;
+        width: 1227px;
+        height: 900px;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: right;
+        object-position: right;
+    }
+}
+
+#header-02 {
+    .header-02--container {
+        .header-02_title{
+            margin: 0;
+            padding: 0;
+            margin-bottom: 52px;
         }
-       
+        .header-02_excerpt {
+            margin: 0;
+            padding: 0;
+            margin-bottom: 32px;
+        }
+        .header-02_button--positioner {
+            margin-bottom: 197px;
+        }
+        .header-02_footer--positioner{
+            p {margin: 0; padding: 0;}
+            span {color: $activeitem}
+        }
     }
 }
 
 /*
 
-<div class="header--positioner">
-<div class="header--container">
-<h1 class="spectral">Witaj w Klubie Komunikacji Odpowiedzialnej !
-</h1><p>KKO to przestrzeń dla istotnych społecznie inicjatyw. Tutaj otrzymacie wsparcie,
-które pomoże Wam</p>
-<a href="#"class="button">Skontaktuj się</a>
-</div><img class="header--banner"alt="hero"src="./media/desktop/SVG/ilu-hero.svg"/>
+<header id="header-02">
+
+<div class="header-02--container">
+<h1 class="spectral header-02_title">Witaj w Klubie Komunikacji<br/>Odpowiedzialnej ! </h1>
+<p class="excerpt header-02_excerpt">KKO to przestrzeń dla istotnych społecznie inicjatyw.<br/>
+Tutaj otrzymacie wsparcie,
+które pomoże Wam <br/>realizować dobre i ważne projekty </p>
+
+<div class="header-02_button--positioner">
+<a href="#"class="button">Skontaktuj się</a
+></div>
+
+<div class="header-02_footer--positioner">
+<p>TEL: XXXXXXXXX</p>
+<p>E-MAIL: email@email.email</p>
 </div>
+
+
+<img alt="witamy"src="./media/desktop/SVG/ilu-hero.svg"/>
+
+</header>
 
 */
