@@ -6,6 +6,7 @@
     position: relative;
     .header-02--container {  
         padding: 185px 0 73px 0;
+        width: 540px;
     }
     img {
         position: absolute;
@@ -41,30 +42,3 @@
             span {color: $activeitem}
         }
     }
-}
-
-/*
-
-<header id="header-02">
-
-<div class="header-02--container">
-<h1 class="spectral header-02_title">Witaj w Klubie Komunikacji<br/>Odpowiedzialnej ! </h1>
-<p class="excerpt header-02_excerpt">KKO to przestrzeń dla istotnych społecznie inicjatyw.<br/>
-Tutaj otrzymacie wsparcie,
-które pomoże Wam <br/>realizować dobre i ważne projekty </p>
-
-<div class="header-02_button--positioner">
-<a href="#"class="button">Skontaktuj się</a
-></div>
-
-<div class="header-02_footer--positioner">
-<p>TEL: XXXXXXXXX</p>
-<p>E-MAIL: email@email.email</p>
-</div>
-
-
-<img alt="witamy"src="./media/desktop/SVG/ilu-hero.svg"/>
-
-</header>
-
-*/
