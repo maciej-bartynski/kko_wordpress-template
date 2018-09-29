@@ -1,7 +1,7 @@
 @media only screen and (max-width: 899px) {
     #header-02{
         width: 100%;
-        padding-left: 2.25%;
+        padding-left: $general-mobile-margin;
         .header-02--container {  
             width: 100%;
         }
@@ -58,7 +58,7 @@
         width: 100%;
         display: flex;
         justify-content: space-between;
-        padding-left: 7.295%;
+        padding-left: $general-desktop-margin;
         position: relative;
         min-height: 900px;
         .header-02--container {  

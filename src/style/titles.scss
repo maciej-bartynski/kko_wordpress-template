@@ -16,4 +16,6 @@ h2.spectral {
     font-size: 32px;
     @include spectral-bold;
     color: $dark;
+    line-height: 50px;
+    margin: 0; padding:0;
 }
