@@ -1,21 +1,18 @@
 #kompetencje-04{
     width:100%;
-    min-height: 0;
-    margin-bottom: 200px;//do usunięcia!!!!!
-
-   
-        h1 {
-            text-align: center;
-            width: 100%;
-            margin: 50px 0 41px 0;
-        }
-        .kompetencje-04--positioner {
-            width: 100%;
-            display: grid;
-            grid-template-rows: auto;
-            grid-template-columns: 1fr;
-            grid-column-gap: 16px;
-            .tilt--positioner {
+    margin-top: 2vw;
+    .kompetencje-04_title {
+        text-align: center;
+        width: 100%;
+        margin: 0 0 41px 0;
+    }
+    .kompetencje-04--positioner {
+        width: 100%;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr;
+        grid-column-gap: 16px;
+        .tilt--positioner {
                 padding: 0 0 0 $general-desktop-margin;
                 display: grid;
                 grid-template-columns: 1fr;
