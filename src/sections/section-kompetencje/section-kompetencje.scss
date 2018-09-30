@@ -1,77 +1,71 @@
+$mobile-slider-gap: 11vw;
+$mobile-slider-half-gap: 5.5vw;
 #kompetencje-04{
     width:100%;
     margin-top: 2vw;
+    overflow: hidden;
     .kompetencje-04_title {
         text-align: center;
         width: 100%;
-        margin: 0 0 41px 0;
+        margin-bottom: 1.25vw;
     }
     .kompetencje-04--positioner {
-        width: 100%;
+        width: 400%;
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr;
-        grid-column-gap: 16px;
         .tilt--positioner {
-                padding: 0 0 0 $general-desktop-margin;
+            position: relative;
+            top: 0;
+            left: 0;
+            transition: all 600ms;
+            padding: 0 $mobile-slider-half-gap 50px $mobile-slider-half-gap;
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+            grid-column-gap: $mobile-slider-gap;
+            .tilt--container {
+                @include tilt-basic-shadow;
+                background-color: $light;
+                padding: 0 16px;
                 display: grid;
-                grid-template-columns: 1fr;
-                grid-template-rows: auto;
-                grid-row-gap: 16px;
-                grid-column-gap: 16px;
-                .tilt--container {
-                    @include tilt-basic-shadow;
-                    position: relative;
-                    background-color: $light;
-                    padding: 0 16px;
-                    &:nth-of-type(1){
-                        z-index: 1;
-                    }
-                    &:nth-of-type(2) {
-                        @media only screen and (max-width: 899px) {
-                            display: none;
-                        }
-                    }
-                    &:nth-of-type(3) {
-                        @media only screen and (max-width: 899px) {
-                            display: none;
-                        }
-                    }
-                    &:nth-of-type(4) {
-                        @media only screen and (max-width: 899px) {
-                            display: none;
-                        }
-                    }
-                    h3 {
-                        text-align: center;
-                        width: 100%;
-                        margin-top: 48px;
-                    }
-                    ul {
-                        margin: 58px auto 58px auto;
-                        padding: 0;
-                        li {
-                            margin: 0;
-                            padding: 0;
-                            font-size: 200%;
-                            color: $dark;
-                            list-style-position: inside;
-                        }
-                        width: 212px;
-                    }
-                    a {
-                        margin: 0 auto 20px auto;
-                    }
+                grid-template-columns: 100%;
+                grid-template-rows: 1.21fr 1.94fr 1.40fr;
+                @media only screen and (min-width: 900px) {
+                    grid-template-rows: 1.21fr 1.94fr auto;
                 }
-            }
-            .img--positioner{
-                @media only screen and (max-width: 899px){
-                    display: none;
+                .tilt-title {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    width: 70%;
+                    height: 100%;
+                    text-align: center;
+                    margin: 0 auto;
+                }
+                ul {
+                    margin: 0 auto;
+                    padding: 0;
+                    li {
+                        margin: 0;
+                        padding: 0;
+                        font-size: 200%;
+                        color: $dark;
+                    }
+                    width: 200px;
+                }
+                a {
+                    margin: 26px auto 26px auto;
                 }
             }
         }
-    
-
+        .img--positioner{
+            @media only screen and (max-width: 899px){
+                display: none;
+            }
+        }
+    }
 
     @media only screen and (min-width: 900px){
         h1 {
@@ -85,8 +79,10 @@
             grid-template-rows: auto;
             grid-template-columns: 1fr 1fr;
             grid-column-gap: 16px;
+            padding-left: $general-desktop-margin;
             .tilt--positioner {
-                padding: 0 0 0 $general-desktop-margin;
+                position: static;
+                padding: 0 0 100px 0;
                 display: grid;
                 grid-template-columns: 1fr 1fr;
                 grid-template-rows: auto auto;
@@ -109,26 +105,6 @@
                     &:nth-of-type(4) {
                         z-index: 2;
                     }
-                    h3 {
-                        text-align: center;
-                        width: 100%;
-                        margin-top: 48px;
-                    }
-                    ul {
-                        margin: 58px auto 58px auto;
-                        padding: 0;
-                        li {
-                            margin: 0;
-                            padding: 0;
-                            font-size: 200%;
-                            color: $dark;
-                            list-style-position: inside;
-                        }
-                        width: 212px;
-                    }
-                    a {
-                        margin: 0 auto 20px auto;
-                    }
                 }
             }
             .img--positioner{
@@ -146,3 +122,23 @@
     }
 }
 
+#kompetencje-04 {
+    .slider {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        @media screen and (min-width: 900px){
+            display: none;
+        }
+    }
+    .bullet {
+        width: 8px;
+        height: 8px;
+        margin: 8px;
+        border-radius: 4px;
+        background-color: $dark;
+    }
+    .activebullet {
+        background-color: $awaits;
+    }
+}
