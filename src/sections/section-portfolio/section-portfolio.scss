@@ -14,7 +14,7 @@ $slider_cover: #FFD448;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: auto;
-        grid-column-gap: none;
+        grid-column-gap:0;
         position: relative;
         left: 0; 
         transition: all 600ms;
