@@ -26,6 +26,20 @@
     }
 }
 
+.hashtag {
+    color: $dark;
+    font-family: $serif;
+    @include serif-semibold;
+    font-size: 24px;
+    line-height: 40px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px){
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
 .list-item {
     color: $dark;
     font-family: $sans;

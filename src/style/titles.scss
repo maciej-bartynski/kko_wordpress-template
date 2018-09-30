@@ -22,3 +22,13 @@ h2.spectral {
     margin: 0;
     padding: 0;
 }
+
+h2.serif {
+    font-family: $spectral;
+    font-size: 32px;
+    @include serif-bold;
+    color: $dark;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+}

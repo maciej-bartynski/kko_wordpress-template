@@ -1,32 +1,31 @@
 import React from 'react';
 
-const slideTheSlider = (num) => {
-    document.querySelector(".tilt--positioner").style.left = num + "%";
-}
 
 export class Slider extends React.Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            position: 0,
-            dims: [0, -25, -50, -75]
+            position: this.props.position,
+            dims: this.props.dims
         }
         this.automaticposition=0,
         this.clickHandler = this.clickHandler.bind(this),
         this.automaticSlide = this.automaticSlide.bind(this),
-        this.timer = ()=>{setTimeout(this.automaticSlide, 15000)},
-        this.timer()
+        this.onClickSlide = this.onClickSlide.bind(this);
+        this.timer = null
     }
 
+    onClickSlide(num){
+        document.querySelector(this.props.movingItem).style.left = num + "%";
+    }
 
     automaticSlide() {
         this.automaticposition += 1;
         this.clickHandler(null, this.automaticposition);
-        if (this.automaticposition === 3) {
+        if (this.automaticposition === this.state.dims.length-1) {
             this.automaticposition = -1;
         }
-        this.timer()
     };
 
     clickHandler(e, num) {
@@ -34,30 +33,35 @@ export class Slider extends React.Component {
         this.setState({
             position: num
         })
+        this.timer = setTimeout(this.automaticSlide, 15000)
     }
 
     render() {
         return (
             <div className="slider">
-                <div onClick={(e) => { this.clickHandler(e, 0) }} className="bullet" />
-                <div onClick={(e) => { this.clickHandler(e, 1) }} className="bullet" />
-                <div onClick={(e) => { this.clickHandler(e, 2) }} className="bullet" />
-                <div onClick={(e) => { this.clickHandler(e, 3) }} className="bullet" />
+                {
+                    (() => {
+                        return this.props.dims.map((item, id) => {
+                            return <div key={`${id}.${this.props.nameClass}`} onClick={(e) => { this.clickHandler(e, id) }} className={`bullet ${this.props.nameClass}`} />
+                        });
+                    })()
+                }
             </div>
         );
     }
 
     componentDidMount() {
-        let active = document.querySelectorAll('.bullet')[this.state.position];
+        let active = document.querySelectorAll(`.bullet.${this.props.nameClass}`)[this.state.position];
         active.classList.add('activebullet');
+        setTimeout(this.automaticSlide, 15000);
     }
 
     componentDidUpdate() {
-        let active = document.querySelectorAll('.bullet')[this.state.position];
-        for (let i = 0; i < document.querySelectorAll('.bullet').length; i++) {
-            document.querySelectorAll(".bullet")[i].classList.remove('activebullet');
+        let active = document.querySelectorAll(`.bullet.${this.props.nameClass}`)[this.state.position];
+        for (let i = 0; i < document.querySelectorAll(`.bullet.${this.props.nameClass}`).length; i++) {
+            document.querySelectorAll(`.bullet.${this.props.nameClass}`)[i].classList.remove('activebullet');
         }
         active.classList.add('activebullet');
-        slideTheSlider(this.state.dims[this.state.position]);
+        this.onClickSlide(this.state.dims[this.state.position]);
     }
 }
