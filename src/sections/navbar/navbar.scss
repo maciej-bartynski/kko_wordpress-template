@@ -1,6 +1,8 @@
-$menu-height: 100px;
-$half-menu-height: 50px;
-$item-height: 25px;
+$desktop-menu-height: 140px;
+$mobile-menu-height: 64px;
+
+$desktop-item-height: 60px;
+$mobile-item-height: 25px;
 
 //rwd
 #navbar-01{
@@ -22,12 +24,18 @@ $item-height: 25px;
     width: 100%;
     max-width: 1640px;
     margin: 0 auto;
-    height: $menu-height;
+    height: $mobile-menu-height;
+    @media only screen and (min-width: 900px) {
+        height: $desktop-menu-height;
+    }
     nav {
         background-color: $light;
         width: 100%;
         box-sizing: border-box;
-        height: $menu-height;
+        height: $mobile-menu-height;
+        @media only screen and (min-width: 900px){
+            height: $desktop-menu-height;
+        }
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -56,7 +64,7 @@ $item-height: 25px;
         padding: 0;
         margin: 0;
         padding-right: 7px;
-        height: $menu-height;
+        height: $mobile-menu-height;
         li {
             display: block;
             height: 100%;
@@ -89,7 +97,7 @@ $item-height: 25px;
         margin: 0;
         list-style: none;
         box-sizing: border-box;
-        height: $menu-height;
+        height: $desktop-menu-height;
         font-family: $serif;
         @include serif-semibold;
         font-size: 24px;
@@ -97,21 +105,17 @@ $item-height: 25px;
         li {
             display: block;
             padding: 0 20px;
-            height: $item-height;
+            height: $desktop-item-height;
             box-sizing: border-box;
             margin: 0;
             &.navbelt-desktop_contact {
                 border-left: solid 1px $vline;
-                height: $half-menu-height;
-                a{
-                    height: $half-menu-height!important;
-                }
             }
         }
         a, span {
             cursor: pointer;
             user-select: none;
-            height: $item-height;
+            height: $desktop-item-height;
             color: $awaitsitem;
             text-decoration: none;
             display: flex;
@@ -218,9 +222,9 @@ $item-height: 25px;
                 cursor: pointer;
                 display: block;
                 padding: 0 20px;
-                height: $item-height;
+                height: $mobile-item-height;
                 margin: 0;
-                margin-top: $item-height;
+                margin-top: $mobile-item-height;
                 box-sizing: border-box;
                 &.navbelt-lang{
                     order: 10;
@@ -240,7 +244,7 @@ $item-height: 25px;
             }
             a, span {
                 user-select: none;
-                height: $item-height;
+                height: $mobile-item-height;
                 color: $awaitsitem;
                 text-decoration: none;
                 display: flex;

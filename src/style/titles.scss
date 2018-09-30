@@ -1,13 +1,15 @@
 h1.spectral{
     font-family: $spectral;
-    font-size: 42px;
-    @include spectral-bold;
+    @include spectral-bold; //powiniec być extrabold
     color: $dark;
-    line-height: 70px;
-    margin: 0; padding:0;
-    @media only screen and (max-width: 899px){
-        font-size: 32px;
-        line-height: 50px;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 50px;
+    @media only screen and (min-width: 900px) {
+        font-size: 42px;
+        line-height: 70px;
+        @include spectral-bold;
     }
 }
 

@@ -2,13 +2,13 @@
     color: $dark;
     font-family: $sans;
     @include sans-light;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 20px;
+    line-height: 33px;
     margin: 0;
     padding:0;
-    @media only screen and (max-width: 899px) {
-        font-size: 20px;
-        line-height: 33px;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
     }
 }
 
@@ -36,12 +36,12 @@
     color: $dark;
     font-family: $serif;
     @include serif-semibold;
-    font-size: 24px;
-    line-height: 40px;
+    font-size: 14px;
+    line-height: 23px;
     margin: 0;
     padding:0;
-    @media only screen and (max-width: 899px) {
-        font-size: 14px;
-        line-height: 23px;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
     }
 }
