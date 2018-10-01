@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 <link href="style.css" rel="stylesheet"></head>
 <body>
 
@@ -238,8 +239,33 @@
 
     </section>
 
-    <section id="section-07">
-        <h2 class="spectral">Desktop h2 spectral</h2>
+    <section id="kontakt-07">
+
+        <h1 class="spectral kontakt-07_title">Kontakt</h1>
+
+        <p class="list-item kontakt-07_paragraph">
+            Prowadzisz inicjatywy społeczne lub kulturalne? 
+            Działasz w organizacji non profil? Potrzebujesz 
+            wsparcia projektantów komunikacji w swoim projekcie? 
+            Skontaktuj się z nami i porozmawiajmy o współpracy.
+        </p>
+
+        <form class="kontakt-07_formula" name="contact-form">
+            <input type="text" name="imie-nazwisko" placeholder="Imię i nazwisko"/>
+            <input type="text" name="telefon" placeholder="Numer telefonu" />
+            <input type="text" name="email" placeholder="Adres e-mail" />
+            <label>Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z RODO i innymi ustawami
+                <input type="checkbox" name="rodo" id="rodo"/>
+                <span class="checkbox-box"></span>
+                <span class="checkbox-border"></span>
+            </label>
+            <div class="button" onclick="document.forms['contact-form'].submit()">Wyślij</div>
+        </form>
+
+        <div class="kontakt-07_canvas--container">
+            <img class=".hands-bg" alt="catch us!" src="media/placeholder-rece.svg">
+        </div>
+
     </section>
    
 <script type="text/javascript" src="main.js"></script></body>
