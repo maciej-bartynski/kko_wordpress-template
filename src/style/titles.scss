@@ -23,6 +23,20 @@ h2.spectral {
     padding: 0;
 }
 
+h2.spectral-scalable {
+    font-family: $spectral;
+    font-size: 24px;
+    @include spectral-bold;
+    color: $dark;
+    line-height: 40px;
+    margin: 0;
+    padding: 0;
+    @media only screen and (min-width: 900px) {
+        font-size: 32px;
+        line-height: 50px;
+    }
+}
+
 h2.serif {
     font-family: $spectral;
     font-size: 32px;

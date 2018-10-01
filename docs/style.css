@@ -55,6 +55,19 @@ h2.spectral {
   margin: 0;
   padding: 0; }
 
+h2.spectral-scalable {
+  font-family: "Spectral", serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  line-height: 40px;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 900px) {
+    h2.spectral-scalable {
+      font-size: 32px;
+      line-height: 50px; } }
+
 h2.serif {
   font-family: "Spectral", serif;
   font-size: 32px;
@@ -690,6 +703,104 @@ h2.serif {
             opacity: 1; }
           #section-05 .section-05_slider--positioner .slider--item:hover .slider_cover .slider_cover--hash {
             opacity: 1; } }
+
+#agencja-06 {
+  margin-top: 4vw;
+  width: 100%;
+  padding: 0 2.25%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto; }
+  #agencja-06 .agencja-06_title {
+    width: 100%;
+    text-align: center; }
+  #agencja-06 .agencja-06_paragraph {
+    width: 100%;
+    text-align: center; }
+  #agencja-06 .agencja-06_button {
+    display: none; }
+  #agencja-06 .agencja-06_img {
+    width: 100%;
+    margin-top: 26px; }
+  #agencja-06 .agencja-06_container {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto; }
+    #agencja-06 .agencja-06_container .agencja-06-subtitle {
+      line-height: 75px;
+      width: 100%;
+      text-align: center; }
+    #agencja-06 .agencja-06_container .agencja-06-subparagraph {
+      width: 100%;
+      text-align: center;
+      line-height: 33px; }
+    #agencja-06 .agencja-06_container .agencja-06-subbutton {
+      margin: 24px auto; }
+
+@media only screen and (min-width: 900px) {
+  #agencja-06 {
+    width: 100%;
+    padding: 0 7.295%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto auto auto; }
+    #agencja-06 .agencja-06_title {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 100%;
+      text-align: center; }
+    #agencja-06 .agencja-06_paragraph {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 100%;
+      text-align: center; }
+    #agencja-06 .agencja-06_button {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      display: flex;
+      margin: 3.84vw auto; }
+    #agencja-06 .agencja-06_img {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 100%;
+      margin-top: 26px; }
+    #agencja-06 .agencja-06_container {
+      position: relative;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 88px auto 88px; }
+      #agencja-06 .agencja-06_container:first-of-type {
+        margin-left: 33%;
+        margin-right: 16%; }
+      #agencja-06 .agencja-06_container:last-of-type {
+        margin-left: 0;
+        margin-right: 49%; } }
+    @media only screen and (min-width: 900px) and (max-width: 1222px) {
+      #agencja-06 .agencja-06_container:first-of-type {
+        margin-left: 16%;
+        margin-right: 16%; }
+      #agencja-06 .agencja-06_container:last-of-type {
+        margin-left: 16%;
+        margin-right: 16%; } }
+
+@media only screen and (min-width: 900px) {
+      #agencja-06 .agencja-06_container .agencja-06-subtitle {
+        line-height: 75px;
+        width: 100%;
+        text-align: left; }
+      #agencja-06 .agencja-06_container .agencja-06-subparagraph {
+        width: 100%;
+        text-align: left;
+        line-height: 33px; }
+      #agencja-06 .agencja-06_container .agencja-06-subbutton {
+        margin: 0;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 1;
+        grid-column-end: 2; } }
 
 * {
   box-sizing: border-box; }
