@@ -6,6 +6,7 @@
     <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
 </head>
 <body>
 
@@ -249,17 +250,21 @@
             Skontaktuj się z nami i porozmawiajmy o współpracy.
         </p>
 
-        <form class="kontakt-07_formula">
+        <form class="kontakt-07_formula" name="contact-form">
             <input type="text" name="imie-nazwisko" placeholder="Imię i nazwisko"/>
             <input type="text" name="telefon" placeholder="Numer telefonu" />
             <input type="text" name="email" placeholder="Adres e-mail" />
-            <input type="checkbox" name="rodo" id="rodo"/>
-            <label for="rodo">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z RODO i innymi ustawami</label>
-            <input class="button" type="submit" name="submit" value="Wyślij"/>
+            <div>
+                <input type="checkbox" name="rodo" id="rodo"/>
+                <label for="rodo">Wyrażam zgodę na przetwarzanie danych osobowych zgodnie z RODO i innymi ustawami</label>
+            </div>
+            <div class="button" onclick="document.forms['contact-form'].submit()">Wyślij</div>
         </form>
 
-        <div class="kontakt-07_canvas--container"></div>
-        
+        <div class="kontakt-07_canvas--container">
+            <img class=".hands-bg" alt="catch us!" src="./media/mobile/SVG/placeholder-rece.svg">
+        </div>
+
     </section>
    
 </body>
