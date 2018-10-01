@@ -1,0 +1,19 @@
+a.social-button {
+    width: 56px;
+    height: 56px;
+    display: block;
+    color: $light;
+    background: $light;
+    background-image: url('media/desktop/SVG/icon-socialmedia.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    &.fb {
+        background-position: left bottom;
+    }
+    &.be {
+        background-position: center bottom;
+    }
+    &.in {
+        background-position: right bottom;
+    }
+}

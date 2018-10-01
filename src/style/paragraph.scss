@@ -63,3 +63,17 @@
         line-height: 40px;
     }
 }
+
+.mainfooterinfo {
+    color: $dark;
+    font-family: $serif;
+    @include serif-regular;
+    font-size: 14px;
+    line-height: 26px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}

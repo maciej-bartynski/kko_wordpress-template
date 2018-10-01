@@ -33,4 +33,16 @@ a.button, div.button {
     @media only screen and (max-width: 900px){
         width: 216px;
     }
+    &.gray-btn {
+        background-color: $dark;
+        color: $light!important;
+        &:hover{
+            background-color: $dark;
+            color: $light!important;
+        }
+        &:active{
+            background-color: $dark;
+            color: $light!important;
+        }
+    }
 }

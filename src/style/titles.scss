@@ -13,6 +13,16 @@ h1.spectral{
     }
 }
 
+h1.spectral-unscalable {
+    font-family: $spectral;
+    @include spectral-bold; //powiniec być extrabold
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 50px;
+}
+
 h2.spectral {
     font-family: $spectral;
     font-size: 24px;
