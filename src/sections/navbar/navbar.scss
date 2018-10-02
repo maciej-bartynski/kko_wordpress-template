@@ -1,6 +1,8 @@
 $desktop-menu-height: 140px;
 $mobile-menu-height: 64px;
 
+$desktop-fixed-menu-height: 80px;
+
 $desktop-item-height: 60px;
 $mobile-item-height: 25px;
 
@@ -47,6 +49,12 @@ $mobile-item-height: 25px;
             top: 0;
             left: 0;
             z-index: 100;
+            @media only screen and (min-width: 900px){
+                height: $desktop-fixed-menu-height;
+                .navbelt-desktop--container {
+                    height: $desktop-fixed-menu-height ;
+                }
+            }
         }
         ul {
             position: relative;
