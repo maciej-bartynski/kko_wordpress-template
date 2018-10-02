@@ -1261,6 +1261,45 @@ a.social-button {
     #corpus-oferta .corpus-oferta_quotes--positioner {
       display: none; } }
 
+#corpus-idea {
+  width: 100%; }
+  #corpus-idea p.corpus-idea_paragraph span {
+    font-weight: 700; }
+
+#corpus-idea {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: 100%;
+  padding: 0 2.25%; }
+  #corpus-idea .corpus-idea--positioner {
+    width: 100%;
+    -o-object-fit: contain;
+    object-fit: contain;
+    -o-object-position: right bottom;
+    object-position: right bottom; }
+
+@media only screen and (min-width: 900px) {
+  #corpus-idea {
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 4fr 8fr;
+    padding: 0 7.295%; }
+    #corpus-idea .corpus-idea--positioner {
+      position: relative; }
+    #corpus-idea img {
+      -moz-transform: scaleX(-1);
+      -o-transform: scaleX(-1);
+      -webkit-transform: scaleX(-1);
+      transform: scaleX(-1);
+      filter: FlipH;
+      -ms-filter: "FlipH";
+      width: 100%;
+      -o-object-fit: contain;
+      object-fit: contain;
+      -o-object-position: right bottom;
+      object-position: right bottom;
+      height: 100%; } }
+
 * {
   box-sizing: border-box; }
 

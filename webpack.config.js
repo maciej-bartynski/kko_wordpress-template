@@ -8,7 +8,10 @@ var extractPlugin = new ExtractTextPlugin({
 module.exports = {
     entry: {
         index: ["@babel/polyfill", "./src/index.js"],
-        oferta: ["@babel/polyfill", "./src/oferta.js"],
+        oferta: ["@babel/polyfill", "./src/pages/oferta/oferta.js"],
+        portfolio: ["@babel/polyfill", "./src/pages/portfolio/portfolio.js"],
+        idea: ["@babel/polyfill", "./src/pages/idea/idea.js"],
+        kontakt: ["@babel/polyfill", "./src/pages/kontakt/kontakt.js"],
     },
     output: {
         path: path.resolve(__dirname, 'docs'),
@@ -57,9 +60,24 @@ module.exports = {
             chunks: ["index"],
         }),
         new HtmlWebPackPlugin({
-            template: "./src/oferta.html",
+            template: "./src/pages/oferta/oferta.html",
             filename: "oferta.html",
             chunks: ["oferta"],
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/pages/idea/idea.html",
+            filename: "idea.html",
+            chunks: ["idea"],
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/pages/portfolio/portfolio.html",
+            filename: "portfolio.html",
+            chunks: ["portfolio"],
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/pages/kontakt/kontakt.html",
+            filename: "kontakt.html",
+            chunks: ["portfolio"],
         })
     ]
 }
