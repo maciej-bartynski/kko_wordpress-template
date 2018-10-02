@@ -6,10 +6,13 @@ var extractPlugin = new ExtractTextPlugin({
 });
 
 module.exports = {
-    entry: ["@babel/polyfill", "./src/index.js"],
+    entry: {
+        index: ["@babel/polyfill", "./src/index.js"],
+        oferta: ["@babel/polyfill", "./src/oferta.js"],
+    },
     output: {
         path: path.resolve(__dirname, 'docs'),
-        filename: 'main.js'
+        filename: '[name].js'
         //publicPath: '/build'
     },
     module: {
@@ -50,7 +53,13 @@ module.exports = {
         extractPlugin,
         new HtmlWebPackPlugin({
             template: "./src/index.html",
-            filename: "./index.html"
+            filename: "index.html",
+            chunks: ["index"],
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/oferta.html",
+            filename: "oferta.html",
+            chunks: ["oferta"],
         })
     ]
 }

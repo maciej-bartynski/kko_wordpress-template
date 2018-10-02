@@ -1,7 +1,7 @@
 //general, always true
 #footer-08{
-    margin-top: 100px;
-    display: flex;
+    //margin-top: 100px;
+    //display: flex;
     width: 100%;
     padding: 0 $general-mobile-margin;
     @media only screen and (min-width:900px){
@@ -10,11 +10,19 @@
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    
+    
     .footer-08--container{
-        width: 100%;
+        //width: 100%;
+        margin: 0 auto;
+        grid-column-gap: 16px;
     }
     .footer-08--bottom-container {
-        width: 100%;
+        //width: 100%;
     }
     .footer-08--bottom-container{
         color: $twilight;
@@ -28,9 +36,9 @@
     padding-bottom: 50px;
     border-top: solid 1px $vline;
     border-bottom: solid 1px $vline;
-   display: grid;
-   grid-template-columns: 100%;
-   grid-template-rows: auto auto auto auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto;
    .footer-08_title {
        margin: 15px 0;
    }
@@ -73,7 +81,7 @@
 #footer-08 .footer-08--container {
     @media only screen and (min-width: 900px){
         display: grid;
-        padding-left: 8.33%;
+        padding-left: 5.33%;
         grid-template-columns: 2fr 2fr 2fr 5fr;
         grid-template-rows: auto;
         .footer-08_title {

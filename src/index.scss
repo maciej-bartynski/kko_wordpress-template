@@ -1,6 +1,7 @@
 //do not change order of importing: 
 //fonts:
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext');
+@import url('https://fonts.googleapis.com/icon?family=Material+Icons');
 //variables
 @import './style/variables.scss';
 //scss components
@@ -8,6 +9,7 @@
 @import './style/titles.scss';
 @import './style/paragraph.scss';
 @import './style/social-button.scss';
+@import './style/kompetencje-tilts.scss';
 //sections
 @import './sections/navbar/navbar.scss';
 @import './sections/header/header.scss';
@@ -17,6 +19,8 @@
 @import './sections/section-agencja/section-agencja.scss';
 @import './sections/section-kontakt/section-kontakt.scss';
 @import './sections/footer/footer.scss';
+//pages
+@import './pages/oferta.scss';
 
 
 //global:
