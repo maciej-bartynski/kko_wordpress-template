@@ -1466,6 +1466,216 @@ a.social-button {
         grid-column-end: 3;
         width: 90%; } }
 
+#corpus-kontakt {
+  width: 100%;
+  padding: 7.295%; }
+
+.corpus-kontakt--positioner {
+  padding: 2.25%;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto;
+  -webkit-box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1); }
+  .corpus-kontakt--positioner .corpus-kontakt_title {
+    width: 100%;
+    text-align: center; }
+  .corpus-kontakt--positioner .corpus-kontakt_paragraph {
+    width: 100%;
+    text-align: center; }
+  .corpus-kontakt--positioner .corpus-kontakt_formula {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto auto auto auto; }
+  .corpus-kontakt--positioner .corpus-kontakt_canvas--container {
+    overflow: hidden;
+    touch-action: none;
+    position: relative; }
+    .corpus-kontakt--positioner .corpus-kontakt_canvas--container img.hands-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%; }
+
+@media only screen and (min-width: 900px) {
+  .corpus-kontakt--positioner {
+    padding: 7.295%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto auto; }
+    .corpus-kontakt--positioner .corpus-kontakt_title {
+      padding-left: 16.66%;
+      padding-right: 16.66%;
+      width: 100%;
+      text-align: left;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .corpus-kontakt--positioner .corpus-kontakt_paragraph {
+      padding-left: 16.66%;
+      padding-right: 16.66%;
+      width: 100%;
+      text-align: left;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      grid-column-start: 1;
+      grid-column-end: 2; }
+    .corpus-kontakt--positioner .corpus-kontakt_formula {
+      padding-left: 16.66%;
+      padding-right: 16.66%;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      grid-column-start: 1;
+      grid-column-end: 2;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: auto auto auto auto auto; }
+    .corpus-kontakt--positioner .corpus-kontakt_canvas--container {
+      grid-row-start: 1;
+      grid-row-end: 4;
+      grid-column-start: 2;
+      grid-column-end: 3;
+      overflow: hidden;
+      touch-action: none;
+      position: relative; }
+      .corpus-kontakt--positioner .corpus-kontakt_canvas--container img.hands-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%; } }
+
+#corpus-kontakt form input {
+  outline: none;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+  background: none;
+  text-align: center;
+  width: 100%;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  padding: 20px 0;
+  border-bottom: 1px solid #E6E6E6;
+  color: #E6E6E6; }
+  #corpus-kontakt form input:active {
+    border-bottom: 5px solid #42a319;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0; }
+  #corpus-kontakt form input:focus {
+    border-bottom: 5px solid #61D375;
+    outline: none;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #61D375; }
+
+#corpus-kontakt form label {
+  padding: 0;
+  margin: 0;
+  display: block;
+  width: 100%;
+  padding: 0 0 0 58px;
+  margin: 20px 0 0 0;
+  position: relative;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  height: 50px; }
+  #corpus-kontakt form label input {
+    opacity: 0;
+    position: absolute;
+    cursor: pointer;
+    width: 0;
+    margin: 0;
+    padding: 0; }
+  #corpus-kontakt form label span.checkbox-box {
+    position: absolute;
+    top: 8px;
+    left: 8px;
+    height: 32px;
+    width: 32px;
+    border-radius: 5px;
+    background: #4CBC1D; }
+    #corpus-kontakt form label span.checkbox-box:after {
+      content: "";
+      position: absolute;
+      display: none;
+      left: 11px;
+      top: 7px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+      transform: rotate(45deg); }
+  #corpus-kontakt form label span.checkbox-border {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 48px;
+    width: 48px;
+    border-radius: 5px;
+    background: transparent;
+    border: solid 1px #4CBC1D;
+    display: block; }
+  #corpus-kontakt form label input:checked ~ span:after {
+    display: block; }
+  #corpus-kontakt form label input:checked ~ span.checkbox-border {
+    border: solid 1px #42a319; }
+  #corpus-kontakt form label input:checked ~ span.checkbox-box {
+    background: #42a319; }
+
+#corpus-kontakt form div {
+  margin: 13px auto 26px auto; }
+
+@media only screen and (min-width: 900px) {
+  #corpus-kontakt form input {
+    text-align: left; }
+  #corpus-kontakt form label {
+    font-size: 16px;
+    line-height: 26px;
+    height: 60px; }
+    #corpus-kontakt form label span.checkbox-box {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      height: 32px;
+      width: 32px;
+      border-radius: 5px;
+      background: #FFFFFF;
+      border: solid 1px #E6E6E6;
+      cursor: pointer; }
+      #corpus-kontakt form label span.checkbox-box:after {
+        content: "";
+        position: absolute;
+        display: none;
+        left: 11px;
+        top: 7px;
+        width: 5px;
+        height: 10px;
+        border: solid #4CBC1D;
+        border-width: 0 3px 3px 0;
+        -webkit-transform: rotate(45deg);
+        -ms-transform: rotate(45deg);
+        transform: rotate(45deg); }
+    #corpus-kontakt form label span.checkbox-border {
+      display: none; }
+    #corpus-kontakt form label input:checked ~ span:after {
+      display: block; }
+    #corpus-kontakt form label input:checked ~ span.checkbox-box {
+      background: #FFFFFF; }
+  #corpus-kontakt form div {
+    margin: 13px auto 26px 0; } }
+
 * {
   box-sizing: border-box; }
 

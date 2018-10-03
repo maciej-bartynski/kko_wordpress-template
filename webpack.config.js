@@ -77,7 +77,7 @@ module.exports = {
         new HtmlWebPackPlugin({
             template: "./src/pages/kontakt/kontakt.html",
             filename: "kontakt.html",
-            chunks: ["portfolio"],
+            chunks: ["kontakt"],
         })
     ]
 }

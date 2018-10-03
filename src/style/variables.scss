@@ -45,6 +45,12 @@ $vline: #E6E6E6;
     -moz-box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
     box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
 }
+
+@mixin big-tilt-basic-shadow {
+    -webkit-box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1);
+    -moz-box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 80px 80px 0px rgba(0, 0, 0, 0.1);
+}
 //typography
 
 $spectral: 'Spectral', serif;
