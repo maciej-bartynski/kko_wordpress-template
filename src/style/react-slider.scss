@@ -1,0 +1,19 @@
+//These class names are catched by react slider script
+
+.react-slider--positioner {
+    //width must be set - it clips the slider
+    overflow: hidden;
+    .react-slider--container {
+        //width must be set = children amount multiplied by 100%; it slides
+        display: grid;
+        grid-template-rows: auto;
+        position: relative;
+        left:0;
+        top:0;
+        transition: left 600ms;
+        .react-slider--item {
+            //grid cell - it contains elements to display
+            opacity: 1;//can be removed
+        }
+    }
+}

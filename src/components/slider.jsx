@@ -1,5 +1,14 @@
 import React from 'react';
 
+export var sliderPositions = (parentCSSClass) => {
+    const parent = document.querySelector(parentCSSClass);
+    const amount = parent.querySelectorAll(".react-slider--item").length;
+    let array = [];
+    for (let i = 0; i < amount; i++) {
+        array.push(i * -100);
+    }
+    return array;
+}
 
 export class Slider extends React.Component {
 

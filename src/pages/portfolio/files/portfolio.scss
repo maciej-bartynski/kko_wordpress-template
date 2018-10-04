@@ -1,0 +1,152 @@
+//positioning
+#corpus-portfolio {
+    width: 100%;
+    
+    .corpus-portfolio_navi--positioner {
+        width: 100%;
+        padding: 0 $general-mobile-margin;
+        .corpus-portfolio_navi--container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            .corpus-portfolio_navi--item {
+                a,
+                a:hover,
+                a:active,
+                a:visited {
+                    text-decoration: none;
+                     color: inherit;
+                }
+                
+            }
+        }
+    }
+    .corpus-portfolio_description--positioner {
+        width: 100%;
+        margin: 6.66vw 0 0 0;
+        padding: 0 $general-mobile-margin;
+        text-align: center;
+    }
+    .corpus-portfolio_secondary-navi--positioner {
+        width: 100%;
+        margin: 11.11vw 0 0 0;
+        padding-left: $general-mobile-margin;
+        border-left: solid 1px $vline;
+        .corpus-portfolio_secondary-navi--container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            text-align: center;
+            .corpus-portfolio_secondary-navi--item {
+                a,
+                a:hover,
+                a:active,
+                a:visited {
+                    text-decoration: none;
+                    color: inherit;
+                }
+                
+            }
+        }
+    }
+    //hir gous slajder
+    @media only screen and (min-width: 900px){
+        .corpus-portfolio_navi--positioner {
+            width: 100%;
+            padding: 0 $general-desktop-margin;
+            .corpus-portfolio_navi--container {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                @media screen and (max-width: 1100px){
+                    .flex-grow-element{
+                        flex-basis: 70%;
+                    } 
+                }
+                .corpus-portfolio_navi--item{
+                    margin-right: 3.22vw;
+                }
+                .corpus-portfolio_navi-hashtag {
+                    display: none;
+                }
+            }
+        }
+        .corpus-portfolio_description--positioner {
+            width: 35.71%;
+            margin: 3.64vw 0 0 $general-desktop-margin;
+            padding: 0;
+            text-align: left;
+            float: left;
+        }
+        .corpus-portfolio_secondary-navi--positioner {
+            width: auto;
+            margin: 3.64vw 0 0 3.57vw;
+            float: left;
+            .corpus-portfolio_secondary-navi--container {
+                width: auto;
+                margin: 0;
+                padding: 0;
+                text-align: left;
+            }
+        }
+        .float-separator{
+            clear: both;
+        }
+    }
+}
+//navi fonts/
+#corpus-portfolio {
+    .corpus-portfolio_navi--positioner {
+        .corpus-portfolio_navi--container {
+            .corpus-portfolio_navi--item {
+                color: $dark;
+                a:hover, a:active {
+                    color: $hover;
+                }
+            }
+            @media only screen and (max-width: 899px){
+                /*instead of line-height: 67px*/
+                .corpus-portfolio_navi--item+.corpus-portfolio_navi--item {
+                    margin-top: 27px;
+                }
+            };
+        }
+    }
+}
+
+//react slider
+.corpus-portfolio_projects--positioner{
+    width: 100%;
+    margin-top: 15.55vw;
+    .corpus-portfolio_projects--container {
+        width: 600%;
+        grid-template-columns: repeat(6, 16.66%);
+        .corpus-portfolio_projects--item {
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .corpus-portfolio_projects--positioner{
+        width: 100%;
+        margin-top: 6.30vw;
+        margin-bottom: 4.16vw;
+        .corpus-portfolio_projects--container {
+            width: 85.33%;
+            padding: 0 8.33%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-row-gap: 0.83vw;
+            grid-column-gap: 0.83vw;
+            position: static;
+            margin: 0 auto;
+            .corpus-portfolio_projects--item {
+                box-sizing: border-box;
+            }
+        }
+    }
+}

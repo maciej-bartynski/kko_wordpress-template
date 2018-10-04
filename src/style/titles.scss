@@ -23,7 +23,7 @@ h1.spectral-unscalable {
     line-height: 50px;
 }
 
-h2.spectral {
+.spectral {
     font-family: $spectral;
     font-size: 24px;
     @include spectral-bold;
@@ -33,7 +33,7 @@ h2.spectral {
     padding: 0;
 }
 
-h2.spectral-scalable {
+.spectral-scalable {
     font-family: $spectral;
     font-size: 24px;
     @include spectral-bold;
