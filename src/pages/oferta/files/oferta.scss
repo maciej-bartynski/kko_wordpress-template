@@ -90,29 +90,52 @@
             margin: 0 auto;
         }
 
-        .corpus-oferta--slider--container {
-            padding: 100px $general-desktop-margin;
-            @media only screen and (min-width: 1300px) {
-                padding: 100px $general-mobile-margin;
-                @media only screen and (min-width: 1460px) {
-                    padding: 100px $general-desktop-margin;
-                }
-            }
-            width: 100%;
-            grid-template-columns: auto;
-            grid-template-rows: auto;
-            .corpus-oferta--positioner {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: auto auto;
-                @media only screen and (min-width: 1300px){
-                    grid-template-columns: 1fr 1fr 1fr 1fr;
-                    grid-template-rows: auto;
-                }
-            }
-        }
-
         .corpus-oferta_quotes--positioner {
             display: none;
+        }
+    }
+}
+
+//react slider
+.corpus-oferta_slider--positioner{
+    width: 100%;
+    margin-top: 2.5vw;
+    .corpus-oferta_slider--container {
+        width: 400%;
+        grid-template-columns: repeat(4, 25%);
+        .corpus-oferta_slider--item {
+            box-sizing: border-box;
+            padding: 0 $general-mobile-margin;
+            padding-bottom: 70px; 
+        }
+    }
+}
+
+@media only screen and (min-width: 900px){
+    .corpus-oferta_slider--positioner{
+        width: 100%;
+        margin-top: 2.5vw;
+        padding: 0 $general-mobile-margin;
+        @media only screen and (min-width: 1460px) {
+            padding: 0 $general-desktop-margin;
+        }
+        .corpus-oferta_slider--container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto auto;
+            @media only screen and (min-width: 1350px){
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: auto;
+            }
+            grid-template-rows: auto;
+            grid-row-gap: 0.83vw;
+            grid-column-gap: 0.83vw;
+            position: static;
+            margin: 0 auto;
+            .corpus-oferta_slider--item {
+                box-sizing: border-box;
+            }
         }
     }
 }

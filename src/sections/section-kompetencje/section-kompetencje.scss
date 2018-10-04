@@ -1,13 +1,12 @@
 #kompetencje-04{
     width:100%;
     margin-top: 2vw;
-    overflow: hidden;
+    
     .kompetencje-04_title {
         text-align: center;
         width: 100%;
-        margin-bottom: 1.25vw;
     }
-    .kompetencje-04--positioner {
+    .kompetencje-04_slider--positioner {
         .img--positioner{
             @media only screen and (max-width: 899px){
                 display: none;
@@ -16,44 +15,63 @@
     }
 
     @media only screen and (min-width: 900px){
-        h1 {
-            text-align: center;
-            width: 100%;
-            margin: 50px 0 41px 0;
-        }
-        .kompetencje-04--positioner {
+        .kompetencje-04_slider--positioner {
             .img--positioner{
                 position: relative;
                 z-index: -1;
                 .img--container{
-                     position: absolute;
-                     z-index: 0;
-                     bottom: 0;
-                     right: 0;
-                     width: 100%;
+                    position: absolute;
+                    z-index: 0;
+                    bottom: 0;
+                    right: 0;
+                    width: 100%;
                 }
             }
         }
     }
 }
 
-#kompetencje-04 {
-    .slider {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        @media screen and (min-width: 900px){
-            display: none;
+//react slider
+.kompetencje-04_slider--positioner{
+    width: 100%;
+    margin-top: 2.5vw;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: 100%;
+    grid-column-gap: 1vw;
+    .kompetencje-04_slider--container {
+        width: 400%;
+        grid-template-columns: repeat(4, 25%);
+        .kompetencje-04_slider--item {
+            box-sizing: border-box;
+            padding: 0 $general-mobile-margin;
+            padding-bottom: 70px; 
         }
     }
-    .bullet {
-        width: 8px;
-        height: 8px;
-        margin: 8px;
-        border-radius: 4px;
-        background-color: $dark;
-    }
-    .activebullet {
-        background-color: $awaits;
+}
+
+@media only screen and (min-width: 900px){
+    .kompetencje-04_slider--positioner{
+        width: 100%;
+        margin-top: 2.5vw;
+        overflow: visible;
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: 1fr 1fr; 
+        padding-left: $general-desktop-margin;
+        .kompetencje-04_slider--container {
+            width: 100%;
+            //padding: 0 8.33%;
+            display: grid;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: auto;
+            grid-row-gap: 0.83vw;
+            grid-column-gap: 0.83vw;
+            position: static;
+            margin: 0 auto;
+            .kompetencje-04_slider--item {
+                box-sizing: border-box;
+            }
+        }
     }
 }

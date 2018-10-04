@@ -1,4 +1,5 @@
 import React from 'react';
+import styled from 'styled-components';
 
 export var sliderPositions = (parentCSSClass) => {
     const parent = document.querySelector(parentCSSClass);
@@ -9,6 +10,30 @@ export var sliderPositions = (parentCSSClass) => {
     }
     return array;
 }
+
+const ReactSlider = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  @media screen and(min-width: 900px) {
+    display: none;
+  }
+  .bullet {
+    width: 8px;
+    height: 8px;
+    margin: 8px;
+    border-radius: 4px;
+    background-color: #333333;
+  }
+  .activebullet {
+    background-color: #4cbc1d;
+  }
+  @media only screen and (min-width: 900px) {
+    &.slider {
+      display: none;
+    }
+  }
+`;
 
 export class Slider extends React.Component {
 
@@ -47,7 +72,7 @@ export class Slider extends React.Component {
 
     render() {
         return (
-            <div className="slider">
+            <ReactSlider className="slider">
                 {
                     (() => {
                         return this.props.dims.map((item, id) => {
@@ -55,7 +80,7 @@ export class Slider extends React.Component {
                         });
                     })()
                 }
-            </div>
+            </ReactSlider>
         );
     }
 

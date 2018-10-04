@@ -1,14 +1,14 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import { Slider } from "./slider.jsx";
-
+import { sliderPositions } from "./slider.jsx";
 //kometencje slider
 ReactDOM.render(
   <Slider
-    nameClass="kompetencje"//unique key for react array items
-    movingItem=".kompetencje-04_tilt--positioner"//parent to catch slider elements
-    position={0}//initial left
-    dims={[0, -25, -50, -75]}//all possible positions
+    nameClass="kompetencje" //unique key for react array items
+    movingItem=".kompetencje-04_slider--container" //parent to catch slider elements
+    position={0} //initial left
+    dims={sliderPositions('.kompetencje-04_slider--container')} //all possible positions
   />,
   document.querySelector(".react-slider.kompetencje")
 );
@@ -17,9 +17,9 @@ ReactDOM.render(
 ReactDOM.render(
   <Slider
     nameClass="portfolio"
-    movingItem=".section-05_slider--positioner"
+    movingItem=".portfolio-05_projects--container"
     position={0}
-    dims={[0, -100, -200, -300, -400, -500]}
+    dims={sliderPositions(".portfolio-05_projects--container")}
   />,
   document.querySelector(".react-slider.portfolio")
 );
