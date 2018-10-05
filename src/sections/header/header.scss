@@ -1,7 +1,5 @@
 
-$general-mobile-margin: 2.25%;
-$general-desktop-margin: 7.295%;
-
+/*
 #header-02{
     width: 100%;
     padding-left: $general-mobile-margin;
@@ -97,3 +95,226 @@ $general-desktop-margin: 7.295%;
         }
     }
 }
+*/
+
+//margins
+$general-mobile-margin: 2.25vw;
+$general-desktop-margin: 7.291vw;
+//$general-desktop-col-gap: 0.83vw;
+$general-desktop-col-gap: 0.9756%;
+
+//fonts
+.h1-spectral-1 {
+    font-family: $spectral;
+    @include spectral-bold;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 50px;
+    @media only screen and (min-width: 900px) {
+        font-size: 42px;
+        line-height: 70px;
+        @include spectral-bold;
+    }
+}
+
+.h3-excerpt-1 {
+    color: $dark;
+    font-family: $sans;
+    @include sans-light;
+    font-size: 20px;
+    line-height: 33px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+.h3-footinfo-1 {
+    color: $dark;
+    font-family: $serif;
+    @include serif-semibold;
+    font-size: 14px;
+    line-height: 23px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
+    }
+}
+
+#header-02{
+    width: 100%;
+    padding: 0 $general-mobile-margin;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;
+    .header-02--container {  
+        width: 100%;
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto auto auto;
+        text-align: center;
+        .header-02_button--positioner {
+            width:100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .header-02_footinfo--wrapper{
+            width:100%;
+            span {
+                color: $activeitem
+            }
+        }
+    }
+    img {
+        width: 100%;
+        -o-object-fit: contain;
+        object-fit: contain;
+        -o-object-position: right;
+        object-position: right;
+    }
+}
+
+#header-02 {
+    @media screen and (min-width: 900px){
+        width: 100%;
+        background-image: url('./media/desktop/SVG/ilu-hero.svg');
+        background-size: contain;
+        @media screen and (max-width: 1662px){
+                background-size:  65%;
+        }
+        background-position: bottom right;
+        background-repeat: no-repeat;
+        padding: 0 $general-desktop-margin;
+        .header-02_img {
+            display: none;
+        }
+        .header-02--container {
+            width: 100%;
+            display: grid;
+            grid-template-columns: repeat(12, 1fr);
+            grid-auto-rows: min-content min-content min-content auto;
+            grid-column-gap: $general-desktop-col-gap;
+            min-height: calc(100vh - 140px);
+            text-align: left;
+            .header-02_title {
+                grid-column-start: 1;
+                grid-column-end: 6;
+                @media screen and (max-width: 1650px){
+                    grid-column-end: 7;
+                    @media screen and (max-width: 1400px) {
+                        grid-column-end: 8;
+                        @media screen and (max-width: 1300px) {
+                            grid-column-end: 9;
+                            @media screen and (max-width: 1200px) {
+                                grid-column-end: 10;
+                                @media screen and (max-width: 1100px) {
+                                    grid-column-end: 11;
+                                    @media screen and (max-width: 1000px) {
+                                        grid-column-end: 13;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-02_excerpt,
+            .header-02_button--positioner,
+            .header-02_footinfo--wrapper {
+                grid-column-start: 1;
+                grid-column-end: 5;
+                @media screen and (max-width: 1300px) {
+                    grid-column-end: 7;
+                    @media screen and (max-width: 1200px) {
+                        grid-column-end: 9;
+                        @media screen and (max-width: 1100px) {
+                            grid-column-end: 11;
+                            @media screen and (max-width: 1000px) {
+                                grid-column-end:13;
+                            }
+                        }
+                    }
+                }
+            }
+            .header-02_title {
+                padding-top: calc(((100vh - 140px) / 100) * 20.26);//20.26vh;
+            }
+            .header-02_excerpt {
+                padding-top: calc(((100vh - 140px) / 100) * 4.4);
+            }
+            .header-02_button--positioner {
+                padding-top: calc(((100vh - 140px) / 100) * 4.4);
+                display: block;
+            }
+            .header-02_footinfo--wrapper {
+                display: flex;
+                align-items: flex-end;
+                height: 100%;
+                .header-02_footinfo--positioner{
+                    padding: calc(((100vh - 140px) / 100) * 4.4) 0 calc(((100vh - 140px) / 100) * 8.14) 0;
+                    .header-02_footinfo {
+                        span {
+                            color: $activeitem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//paddingi w stosunku do szerokości przegląradki:
+/*
+.header-02_title {
+    padding-top: 9.583vw;
+}
+
+.header-02_excerpt {
+    padding-top: 3.125vw;
+}
+
+.header-02_button--positioner {
+    padding-top: 2.343vw;
+}
+
+.header-02_footinfo--positioner.first {
+    padding-top: 10.208vw;
+}
+
+.header-02_footinfo--positioner.second {
+    padding-bottom: 3.43vw;
+}
+*/
+
+/*procent szerokości diva
+.header-02_title {
+    padding-top: 27.29%;
+}
+
+.header-02_excerpt {
+    padding-top: 7.64%;
+}
+
+.header-02_button--positioner {
+    padding-top: 7.089%;
+}
+
+.header-02_footinfo--positioner.first {
+    padding-top: 36.56%;
+
+    span {
+        color: $activeitem;
+    }
+}
+
+.header-02_footinfo--positioner.second {
+    padding-bottom: 13.619%;
+}
+*/

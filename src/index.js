@@ -3,3 +3,5 @@ import './index.scss';
 //scripts
 import './components/react.jsx';
 import './sections/navbar/navbar.js';
+//manual file loader:
+import './deleteThisPage.html';
