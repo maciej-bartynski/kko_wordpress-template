@@ -1,6 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
 
+export var kompetencjePositions = (parentCSSClass) => {
+    const parent = document.querySelector(parentCSSClass);
+    const amount = parent.querySelectorAll(".react-slider--item").length;
+    let array = [];
+    for (let i = 0; i < amount; i++) {
+        array.push(10+(i * -85));
+    };
+    return array;
+}
+
 export var sliderPositions = (parentCSSClass) => {
     const parent = document.querySelector(parentCSSClass);
     const amount = parent.querySelectorAll(".react-slider--item").length;

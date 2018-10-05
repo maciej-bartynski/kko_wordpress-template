@@ -917,14 +917,16 @@ a.social-button {
   margin-top: 2.5vw;
   display: grid;
   grid-template-rows: auto;
-  grid-template-columns: 100%;
-  grid-column-gap: 1vw; }
+  grid-template-columns: 100%; }
   .kompetencje-04_slider--positioner .kompetencje-04_slider--container {
     width: 400%;
-    grid-template-columns: repeat(4, 25%); }
+    padding: 0;
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 1.25%;
+    left: 10%; }
     .kompetencje-04_slider--positioner .kompetencje-04_slider--container .kompetencje-04_slider--item {
       box-sizing: border-box;
-      padding: 0 2.25vw;
+      padding: 0;
       padding-bottom: 70px; }
 
 @media only screen and (min-width: 900px) {
@@ -935,11 +937,12 @@ a.social-button {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    padding-left: 7.291vw; }
+    padding-left: 7.291vw;
+    grid-column-gap: 1vw; }
     .kompetencje-04_slider--positioner .kompetencje-04_slider--container {
       width: 100%;
       display: grid;
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 1fr 1fr;
       grid-template-rows: auto;
       grid-row-gap: 0.83vw;
       grid-column-gap: 0.83vw;
@@ -1433,10 +1436,12 @@ a.social-button {
   margin-top: 2.5vw; }
   .corpus-oferta_slider--positioner .corpus-oferta_slider--container {
     width: 400%;
-    grid-template-columns: repeat(4, 25%); }
+    grid-template-columns: repeat(4, 20%);
+    grid-column-gap: 1.25%;
+    left: 10%; }
     .corpus-oferta_slider--positioner .corpus-oferta_slider--container .corpus-oferta_slider--item {
       box-sizing: border-box;
-      padding: 0 2.25vw;
+      padding: 0;
       padding-bottom: 70px; }
 
 @media only screen and (min-width: 900px) {
