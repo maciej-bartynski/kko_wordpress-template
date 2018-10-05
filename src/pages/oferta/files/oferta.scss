@@ -116,6 +116,7 @@
         width: 100%;
         margin-top: 2.5vw;
         padding: 0 $general-mobile-margin;
+        overflow: visible;
         @media only screen and (min-width: 1460px) {
             padding: 0 $general-desktop-margin;
         }
@@ -135,6 +136,7 @@
             margin: 0 auto;
             .corpus-oferta_slider--item {
                 box-sizing: border-box;
+                padding: 0;
             }
         }
     }

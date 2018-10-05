@@ -1,7 +1,6 @@
 //general, always true
 #footer-08{
-    //margin-top: 100px;
-    //display: flex;
+    margin-top: 100px;
     width: 100%;
     padding: 0 $general-mobile-margin;
     @media only screen and (min-width:900px){
@@ -17,7 +16,6 @@
     
     
     .footer-08--container{
-        //width: 100%;
         margin: 0 auto;
         grid-column-gap: 16px;
     }

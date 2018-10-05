@@ -1,57 +1,73 @@
+$general-desktop-col-gap: 0.9756%;
+
 #idea-03{
+    margin-top: 40px;
     min-height: 0;
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 100%;
-    img {
-        width: 90%;
+    .idea-03_img--positioner {
+        width:100%;
+        padding-right: 6.66%;
+        padding-top: 4.44%;
+        img {
+            width: 100%;
+        }
     }
     .idea-03--container{
         padding: 0 $general-mobile-margin 0 $general-mobile-margin;
         width: 100%;
         h1, p{
             text-align: center;
-        }
-        h1 {
-            margin-bottom: 1.2vw;
-        }
-        p {
-            margin-bottom: 1.2vw;
+            margin: 0 auto 1.2vw auto;
+            max-width: 340px;
         }
     }
 }
 
 #idea-03{
     @media only screen and (min-width: 900px){
-        margin-top: 7.86vw;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 7fr 5fr;
-        grid-column-gap: 1.2vw;
-        img {
-            width: 100%;
-            height: 100%;
-            order: 1;
-             -o-object-fit: contain;
-             object-fit: contain;
-             -o-object-position: left bottom;
-             object-position: left bottom;
+        background-image: url('./media/desktop/SVG/Ilu-home-idea.svg');
+        background-repeat: no-repeat;
+        background-size: 56.77%;
+        background-position: left center;
+        margin-top: 7.86%;
+        min-height: 43.5vw;
+        .idea-03_img--positioner {
+            display:none;
         }
         .idea-03--container{
-            padding: 0;
-            order: 2;
             width: 100%;
-            height: 100%;
-            max-width: 400px;
-            padding-top: 5.62vw;
-            padding-bottom: 17.62vw;
+            padding: 0 $general-desktop-margin;
+            display: grid;
+            grid-template-rows: min-content auto;
+            grid-template-columns: repeat(12, 1fr);
+            grid-column-gap: $general-desktop-col-gap;
             h1{
                 text-align: left;
-                margin-bottom: 2.1vw;
+                grid-column-start: 8;
+                grid-column-end: 12;
+                margin: 19.56% 0 0 0;
+                max-width: 1920px;
+                @media screen and (max-width: 1300px) {
+                    grid-column-end: 13;
+                    @media screen and (max-width: 1200px) {
+                        text-align: center;
+                    }
+                }
             }
             p{
                 text-align: left;
-                margin: 0;
+                grid-column-start: 8;
+                grid-column-end: 12;
+                margin: 7.46% 0 0 0;
+                max-width: 1920px;
+                @media screen and (max-width: 1300px) {
+                    grid-column-end: 13;
+                    @media screen and (max-width: 1200px) {
+                        text-align: center;
+                    }
+                }
             }
         }
     }

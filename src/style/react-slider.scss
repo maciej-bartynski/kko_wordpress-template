@@ -2,7 +2,7 @@
 
 .react-slider--positioner {
     //width must be set - it clips the slider
-    overflow: hidden;
+    overflow-x: hidden;
     .react-slider--container {
         //width must be set = children amount multiplied by 100%; it slides
         display: grid;
