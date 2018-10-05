@@ -649,9 +649,48 @@ a.social-button {
         color: #4d4d4d !important;
         padding-left: 20px; } }
 
+.h1-spectral-1 {
+  font-family: "Spectral", serif;
+  font-weight: 700;
+  color: #333333;
+  margin: 0;
+  padding: 0;
+  font-size: 32px;
+  line-height: 50px; }
+  @media only screen and (min-width: 900px) {
+    .h1-spectral-1 {
+      font-size: 42px;
+      line-height: 70px;
+      font-weight: 700; } }
+
+.h3-excerpt-1 {
+  color: #333333;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 33px;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 900px) {
+    .h3-excerpt-1 {
+      font-size: 24px;
+      line-height: 40px; } }
+
+.h3-footinfo-1 {
+  color: #333333;
+  font-family: "Source Serif Pro", serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 23px;
+  margin: 0;
+  padding: 0; }
+  @media only screen and (min-width: 900px) {
+    .h3-footinfo-1 {
+      font-size: 24px;
+      line-height: 40px; } }
+
 #header-02 {
   width: 100%;
-  padding-left: 2.25%;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto; }
@@ -659,63 +698,132 @@ a.social-button {
     width: 100%;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto auto; }
-  #header-02 img {
-    width: 100%;
-    -o-object-fit: contain;
-    object-fit: contain;
-    -o-object-position: right;
-    object-position: right; }
-  #header-02 .img-desktop--container {
-    display: none; }
+    grid-template-rows: auto auto auto auto auto; }
+    #header-02 .header-02--container .header-02_button--positioner {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #header-02 .header-02--container .header-02_footinfo--wrapper .header-02_footinfo--positioner {
+      padding: calc(((100vh - 64px) / 100) * 2.56) 0 0 0;
+      text-align: center;
+      width: 100%; }
+      #header-02 .header-02--container .header-02_footinfo--wrapper .header-02_footinfo--positioner span {
+        color: #61D375; }
+    #header-02 .header-02--container .header-02_excerpt,
+    #header-02 .header-02--container .header-02_button--positioner,
+    #header-02 .header-02--container .header-02_footinfo--wrapper,
+    #header-02 .header-02--container .header-02_title {
+      padding: 0 2.25vw; }
+    #header-02 .header-02--container .header-02_excerpt,
+    #header-02 .header-02--container .header-02_title {
+      max-width: 400px; }
+      @media screen and (min-width: 400px) {
+        #header-02 .header-02--container .header-02_excerpt,
+        #header-02 .header-02--container .header-02_title {
+          margin-left: 15.55%; } }
+    #header-02 .header-02--container .header-02_img--positioner {
+      width: 100%;
+      padding-left: 15.55%;
+      padding-top: 4.44%; }
+      #header-02 .header-02--container .header-02_img--positioner img {
+        width: 100%; }
 
-#header-02 .header-02--container .header-02_title {
-  width: 100%; }
-
-#header-02 .header-02--container .header-02_excerpt {
-  width: 100%; }
-
-#header-02 .header-02--container .header-02_button--positioner {
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 16px; }
-
-#header-02 .header-02--container .header-02_footinfo--positioner {
-  width: 100%;
-  text-align: center; }
-  #header-02 .header-02--container .header-02_footinfo--positioner span {
-    color: #61D375; }
-  #header-02 .header-02--container .header-02_footinfo--positioner:last-of-type {
-    margin-bottom: 40px; }
-
-@media only screen and (min-width: 900px) {
+@media screen and (min-width: 900px) and (orientation: landscape) {
   #header-02 {
     width: 100%;
-    padding-left: 7.295%;
-    display: grid;
-    grid-template-columns: 4fr 8fr;
-    grid-template-rows: auto; }
-    #header-02 .header-02--container img {
+    background-image: url(media/ilu-hero.svg);
+    background-size: contain;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    padding: 0 7.291vw; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1662px) {
+    #header-02 {
+      background-size: 65%; } }
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+    #header-02 .header-02_img--positioner {
       display: none; }
-    #header-02 .img-desktop--container {
-      display: inline-block;
-      -o-object-fit: contain;
-      object-fit: contain;
-      -o-object-position: bottom right;
-      object-position: bottom right;
-      height: 100%; }
-  #header-02 .header-02--container .header-02_title {
-    margin-top: 9vw;
-    margin-bottom: 2.3vw; }
-  #header-02 .header-02--container .header-02_excerpt {
-    margin-bottom: 1.6vw; }
-  #header-02 .header-02--container .header-02_button--positioner {
-    justify-content: flex-start;
-    margin-bottom: 9.89vw; }
-  #header-02 .header-02--container .header-02_footinfo--positioner {
-    text-align: left; } }
+    #header-02 .header-02--container {
+      width: 100%;
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      grid-auto-rows: min-content min-content min-content auto;
+      grid-column-gap: 0.9756%;
+      min-height: calc(100vh - 140px); }
+      #header-02 .header-02--container .header-02_title {
+        grid-column-start: 1;
+        grid-column-end: 6; } }
+      @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) {
+        #header-02 .header-02--container .header-02_title {
+          grid-column-end: 7; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) and (max-width: 1400px) {
+    #header-02 .header-02--container .header-02_title {
+      grid-column-end: 8; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) and (max-width: 1400px) and (max-width: 1300px) {
+    #header-02 .header-02--container .header-02_title {
+      grid-column-end: 9; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) and (max-width: 1400px) and (max-width: 1300px) and (max-width: 1200px) {
+    #header-02 .header-02--container .header-02_title {
+      grid-column-end: 10; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) and (max-width: 1400px) and (max-width: 1300px) and (max-width: 1200px) and (max-width: 1100px) {
+    #header-02 .header-02--container .header-02_title {
+      grid-column-end: 11; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1650px) and (max-width: 1400px) and (max-width: 1300px) and (max-width: 1200px) and (max-width: 1100px) and (max-width: 1000px) {
+    #header-02 .header-02--container .header-02_title {
+      grid-column-end: 13; } }
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+      #header-02 .header-02--container .header-02_excerpt,
+      #header-02 .header-02--container .header-02_title {
+        max-width: 1920px;
+        margin: 0; }
+      #header-02 .header-02--container .header-02_excerpt,
+      #header-02 .header-02--container .header-02_button--positioner,
+      #header-02 .header-02--container .header-02_footinfo--wrapper {
+        grid-column-start: 1;
+        grid-column-end: 5; } }
+      @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1300px) {
+        #header-02 .header-02--container .header-02_excerpt,
+        #header-02 .header-02--container .header-02_button--positioner,
+        #header-02 .header-02--container .header-02_footinfo--wrapper {
+          grid-column-end: 7; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1300px) and (max-width: 1200px) {
+    #header-02 .header-02--container .header-02_excerpt,
+    #header-02 .header-02--container .header-02_button--positioner,
+    #header-02 .header-02--container .header-02_footinfo--wrapper {
+      grid-column-end: 9; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1300px) and (max-width: 1200px) and (max-width: 1100px) {
+    #header-02 .header-02--container .header-02_excerpt,
+    #header-02 .header-02--container .header-02_button--positioner,
+    #header-02 .header-02--container .header-02_footinfo--wrapper {
+      grid-column-end: 11; } }
+  @media screen and (min-width: 900px) and (orientation: landscape) and (max-width: 1300px) and (max-width: 1200px) and (max-width: 1100px) and (max-width: 1000px) {
+    #header-02 .header-02--container .header-02_excerpt,
+    #header-02 .header-02--container .header-02_button--positioner,
+    #header-02 .header-02--container .header-02_footinfo--wrapper {
+      grid-column-end: 13; } }
+
+@media screen and (min-width: 900px) and (orientation: landscape) {
+      #header-02 .header-02--container .header-02_title {
+        padding: 0;
+        padding-top: calc(((100vh - 140px) / 100) * 20.26); }
+      #header-02 .header-02--container .header-02_excerpt {
+        padding: 0;
+        padding-top: calc(((100vh - 140px) / 100) * 4.4); }
+      #header-02 .header-02--container .header-02_button--positioner {
+        padding: 0;
+        padding-top: calc(((100vh - 140px) / 100) * 4.4);
+        display: block; }
+      #header-02 .header-02--container .header-02_footinfo--wrapper {
+        padding: 0;
+        display: flex;
+        align-items: flex-end;
+        height: 100%; }
+        #header-02 .header-02--container .header-02_footinfo--wrapper .header-02_footinfo--positioner {
+          padding: 0;
+          padding: calc(((100vh - 140px) / 100) * 4.4) 0 calc(((100vh - 140px) / 100) * 8.14) 0;
+          text-align: left; } }
 
 #idea-03 {
   min-height: 0;
@@ -725,7 +833,7 @@ a.social-button {
   #idea-03 img {
     width: 90%; }
   #idea-03 .idea-03--container {
-    padding: 0 2.25% 0 2.25%;
+    padding: 0 2.25vw 0 2.25vw;
     width: 100%; }
     #idea-03 .idea-03--container h1, #idea-03 .idea-03--container p {
       text-align: center; }
@@ -796,7 +904,7 @@ a.social-button {
     grid-template-columns: repeat(4, 25%); }
     .kompetencje-04_slider--positioner .kompetencje-04_slider--container .kompetencje-04_slider--item {
       box-sizing: border-box;
-      padding: 0 2.25%;
+      padding: 0 2.25vw;
       padding-bottom: 70px; }
 
 @media only screen and (min-width: 900px) {
@@ -807,7 +915,7 @@ a.social-button {
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 1fr 1fr;
-    padding-left: 7.295%; }
+    padding-left: 7.291vw; }
     .kompetencje-04_slider--positioner .kompetencje-04_slider--container {
       width: 100%;
       display: grid;
@@ -838,7 +946,7 @@ a.social-button {
     width: 100%;
     margin-top: 2.08vw;
     margin-bottom: 4.16vw;
-    padding: 0 7.295%; }
+    padding: 0 7.291vw; }
     #section-05 .portfolio-05_projects--positioner .portfolio-05_projects--container {
       width: 100%;
       padding: 0;
@@ -855,7 +963,7 @@ a.social-button {
 #agencja-06 {
   margin-top: 4vw;
   width: 100%;
-  padding: 0 2.25%;
+  padding: 0 2.25vw;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto auto; }
@@ -888,7 +996,7 @@ a.social-button {
 @media only screen and (min-width: 900px) {
   #agencja-06 {
     width: 100%;
-    padding: 0 7.295%;
+    padding: 0 7.291vw;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto auto auto; }
@@ -951,7 +1059,7 @@ a.social-button {
         grid-column-end: 2; } }
 
 #kontakt-07 {
-  padding: 0 2.25%;
+  padding: 0 2.25vw;
   margin-top: 52px;
   display: grid;
   grid-template-columns: 100%;
@@ -979,7 +1087,7 @@ a.social-button {
 
 @media only screen and (min-width: 900px) {
   #kontakt-07 {
-    padding: 0 0 0 7.295%;
+    padding: 0 0 0 7.291vw;
     margin-top: 120px;
     display: grid;
     grid-template-columns: 50% 50%;
@@ -1157,7 +1265,7 @@ a.social-button {
 
 #footer-08 {
   width: 100%;
-  padding: 0 2.25%;
+  padding: 0 2.25vw;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
@@ -1166,7 +1274,7 @@ a.social-button {
   grid-template-rows: auto auto; }
   @media only screen and (min-width: 900px) {
     #footer-08 {
-      padding: 0 7.295%; } }
+      padding: 0 7.291vw; } }
   #footer-08 .footer-08--container {
     margin: 0 auto;
     grid-column-gap: 16px; }
@@ -1232,16 +1340,16 @@ a.social-button {
     line-height: 70px;
     width: 100%;
     text-align: center;
-    padding: 0 2.25%; }
+    padding: 0 2.25vw; }
   #corpus-oferta .corpus-oferta-paragraph {
     width: 100%;
     text-align: center;
-    padding: 0 2.25%; }
+    padding: 0 2.25vw; }
   #corpus-oferta .corpus-oferta_quotes--positioner {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 1fr 1fr 1fr;
-    padding: 9vw 2.25%; }
+    padding: 9vw 2.25vw; }
   #corpus-oferta .corpus-oferta_quotes-m-fl {
     width: 100%;
     position: relative; }
@@ -1288,11 +1396,11 @@ a.social-button {
       line-height: 70px;
       width: 100%;
       text-align: center;
-      padding: 0 2.25%; }
+      padding: 0 2.25vw; }
     #corpus-oferta .corpus-oferta-paragraph {
       width: 100%;
       text-align: center;
-      padding: 0 2.25%;
+      padding: 0 2.25vw;
       max-width: 1000px;
       margin: 0 auto; }
     #corpus-oferta .corpus-oferta_quotes--positioner {
@@ -1306,17 +1414,17 @@ a.social-button {
     grid-template-columns: repeat(4, 25%); }
     .corpus-oferta_slider--positioner .corpus-oferta_slider--container .corpus-oferta_slider--item {
       box-sizing: border-box;
-      padding: 0 2.25%;
+      padding: 0 2.25vw;
       padding-bottom: 70px; }
 
 @media only screen and (min-width: 900px) {
   .corpus-oferta_slider--positioner {
     width: 100%;
     margin-top: 2.5vw;
-    padding: 0 2.25%; } }
+    padding: 0 2.25vw; } }
   @media only screen and (min-width: 900px) and (min-width: 1460px) {
     .corpus-oferta_slider--positioner {
-      padding: 0 7.295%; } }
+      padding: 0 7.291vw; } }
 
 @media only screen and (min-width: 900px) {
     .corpus-oferta_slider--positioner .corpus-oferta_slider--container {
@@ -1348,11 +1456,11 @@ a.social-button {
   grid-template-rows: auto auto auto;
   grid-template-columns: 100%; }
   #corpus-idea .corpus-idea_description--positioner {
-    padding: 0 2.25%; }
+    padding: 0 2.25vw; }
   #corpus-idea .corpus-idea_img--positioner {
     padding: 0; }
   #corpus-idea .corpus-idea_quotes--positioner {
-    padding: 0 2.25%; }
+    padding: 0 2.25vw; }
 
 #corpus-idea .corpus-idea_description--positioner {
   text-align: center; }
@@ -1361,7 +1469,7 @@ a.social-button {
     margin: 0 auto; }
 
 #corpus-idea .corpus-idea_img--positioner {
-  padding: 16px 2.25% 16px 0; }
+  padding: 16px 2.25vw 16px 0; }
   #corpus-idea .corpus-idea_img--positioner img {
     -moz-transform: scaleX(-1);
     -o-transform: scaleX(-1);
@@ -1374,7 +1482,7 @@ a.social-button {
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 9vw 2.25% 4vw 2.25%; }
+  padding: 9vw 2.25vw 4vw 2.25vw; }
   #corpus-idea .corpus-idea_quotes--positioner .corpus-idea_quotes-m-fl {
     width: 100%;
     position: relative; }
@@ -1420,19 +1528,19 @@ a.social-button {
   #corpus-idea {
     display: grid;
     grid-template-rows: auto auto;
-    grid-template-columns: 7.295% 8fr 8fr; } }
+    grid-template-columns: 7.291vw 8fr 8fr; } }
   @media only screen and (min-width: 900px) and (min-width: 1200px) {
     #corpus-idea {
-      grid-template-columns: 7.295% 7fr 8fr; } }
+      grid-template-columns: 7.291vw 7fr 8fr; } }
   @media only screen and (min-width: 900px) and (min-width: 1200px) and (min-width: 1300px) {
     #corpus-idea {
-      grid-template-columns: 7.295% 6fr 8fr; } }
+      grid-template-columns: 7.291vw 6fr 8fr; } }
   @media only screen and (min-width: 900px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) {
     #corpus-idea {
-      grid-template-columns: 7.295% 5fr 8fr; } }
+      grid-template-columns: 7.291vw 5fr 8fr; } }
   @media only screen and (min-width: 900px) and (min-width: 1200px) and (min-width: 1300px) and (min-width: 1400px) and (min-width: 1500px) {
     #corpus-idea {
-      grid-template-columns: 7.295% 4fr 8fr; } }
+      grid-template-columns: 7.291vw 4fr 8fr; } }
 
 @media only screen and (min-width: 900px) {
     #corpus-idea .corpus-idea_description--positioner {
@@ -1453,7 +1561,7 @@ a.social-button {
         -o-object-position: right bottom;
         object-position: right bottom; }
     #corpus-idea .corpus-idea_quotes--positioner {
-      padding: 7vw 7.295%;
+      padding: 7vw 7.291vw;
       grid-column-start: 1;
       grid-column-end: 4; }
     #corpus-idea .corpus-idea_quotes--positioner {
@@ -1529,7 +1637,7 @@ a.social-button {
   width: 100%; }
   #corpus-portfolio .corpus-portfolio_navi--positioner {
     width: 100%;
-    padding: 0 2.25%; }
+    padding: 0 2.25vw; }
     #corpus-portfolio .corpus-portfolio_navi--positioner .corpus-portfolio_navi--container {
       width: 100%;
       margin: 0;
@@ -1544,12 +1652,12 @@ a.social-button {
   #corpus-portfolio .corpus-portfolio_description--positioner {
     width: 100%;
     margin: 6.66vw 0 0 0;
-    padding: 0 2.25%;
+    padding: 0 2.25vw;
     text-align: center; }
   #corpus-portfolio .corpus-portfolio_secondary-navi--positioner {
     width: 100%;
     margin: 11.11vw 0 0 0;
-    padding-left: 2.25%;
+    padding-left: 2.25vw;
     border-left: solid 1px #E6E6E6; }
     #corpus-portfolio .corpus-portfolio_secondary-navi--positioner .corpus-portfolio_secondary-navi--container {
       width: 100%;
@@ -1566,7 +1674,7 @@ a.social-button {
   @media only screen and (min-width: 900px) {
     #corpus-portfolio .corpus-portfolio_navi--positioner {
       width: 100%;
-      padding: 0 7.295%; }
+      padding: 0 7.291vw; }
       #corpus-portfolio .corpus-portfolio_navi--positioner .corpus-portfolio_navi--container {
         width: 100%;
         display: flex;
@@ -1581,7 +1689,7 @@ a.social-button {
           display: none; }
     #corpus-portfolio .corpus-portfolio_description--positioner {
       width: 35.71%;
-      margin: 3.64vw 0 0 7.295%;
+      margin: 3.64vw 0 0 7.291vw;
       padding: 0;
       text-align: left;
       float: left; }
@@ -1637,10 +1745,10 @@ a.social-button {
 
 #corpus-kontakt {
   width: 100%;
-  padding: 7.295%; }
+  padding: 7.291vw; }
 
 .corpus-kontakt--positioner {
-  padding: 2.25%;
+  padding: 2.25vw;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: auto auto auto auto;
@@ -1670,7 +1778,7 @@ a.social-button {
 
 @media only screen and (min-width: 900px) {
   .corpus-kontakt--positioner {
-    padding: 7.295%;
+    padding: 7.291vw;
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: auto auto auto; }
