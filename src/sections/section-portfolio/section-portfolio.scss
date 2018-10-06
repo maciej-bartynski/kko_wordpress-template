@@ -7,12 +7,8 @@ $slider_cover: #FFD448;
     margin: 0;
     padding: 0;
     font-size: 32px;
-    line-height: 55px;
-
     @media only screen and (min-width: 900px) {
         font-size: 40px;
-        line-height: 75px;
-        @include spectral-bold;
     }
 }
 
@@ -36,7 +32,7 @@ $slider_cover: #FFD448;
             margin-top: 2.08%;
         }
         .portfolio-05_projects--container {
-            width: 600%;
+            //width: 600%;
             grid-template-columns: repeat(6, 16.66%);
             .portfolio-05_projects--item {
                 box-sizing: border-box;
@@ -66,5 +62,7 @@ $slider_cover: #FFD448;
             }
         }
     }
-    
+    .react-slider.portfolio {
+        margin-top: 24px;
+    }
 }

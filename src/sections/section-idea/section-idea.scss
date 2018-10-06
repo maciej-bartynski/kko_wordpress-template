@@ -7,16 +7,13 @@ $general-desktop-col-gap: 0.9756%;
     margin: 0;
     padding: 0;
     font-size: 32px;
-    line-height: 55px;
 
     @media only screen and (min-width: 900px) {
         font-size: 42px;
-        line-height: 55px;
-        @include spectral-bold;
     }
 }
 
-.paragraph-spectral-idea {
+.paragraph-sans-idea {
     color: $dark;
     font-family: $sans;
     @include sans-light;

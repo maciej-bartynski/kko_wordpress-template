@@ -59,8 +59,12 @@ export class Slider extends React.Component {
         this.automaticposition=0,
         this.clickHandler = this.clickHandler.bind(this),
         this.automaticSlide = this.automaticSlide.bind(this),
-        this.onClickSlide = this.onClickSlide.bind(this);
-        this.timer = null
+        this.onClickSlide = this.onClickSlide.bind(this),
+        this.timer = null,
+        this.swipeEventDispatcher = this.swipeEventDispatcher.bind(this);
+        this.swipeEventDispatcher();
+        this.sliderLength = this.sliderLength.bind(this);
+        this.sliderLength();
     }
 
     onClickSlide(num){
@@ -110,5 +114,50 @@ export class Slider extends React.Component {
         }
         active.classList.add('activebullet');
         this.onClickSlide(this.state.dims[this.state.position]);
+    }
+
+    sliderLength () {
+        let key = this.props.movingItem.replace('.', 'x');
+        let slider = document.querySelector(this.props.movingItem);
+        let childrens = slider.querySelectorAll(".react-slider--item").length;
+        let width = childrens*100+'%';
+
+        var style = document.createElement('style');
+        style.type = 'text/css';
+        style.innerHTML = "@media screen and (max-width: 899px) { .dynamicWidth"+key+" { width: "+width+"; }}";
+        slider.classList.add("dynamicWidth" + key);
+        document.getElementsByTagName('head')[0].appendChild(style);
+    }
+
+    swipeEventDispatcher() {
+        var touchEnded, touchStarted;
+        let swinger = document.querySelector(this.props.movingItem);
+        swinger.addEventListener('touchstart', e => handleTouchStart(e), false);
+        swinger.addEventListener('touchend', e => handleTouchEnd(e), false);
+
+        const handleTouchStart = (e) => {
+            touchStarted = e.touches[0].clientX;
+        };
+
+        const handleTouchEnd = (e) => {
+            touchEnded = e.changedTouches[0].clientX;
+            if (touchStarted - touchEnded > 0) {
+                let newPos=this.state.position<this.props.dims.length-1?this.state.position+1:this.props.dims.length-1;
+                clearTimeout(this.timer);
+                this.setState({
+                    position: newPos
+                })
+                this.timer = setTimeout(this.automaticSlide, 15000)
+            } else if (touchStarted - touchEnded < 0) {
+                let newPos=this.state.position>0?this.state.position-1:0;
+                clearTimeout(this.timer);
+                this.setState({
+                    position: newPos
+                })
+                this.timer = setTimeout(this.automaticSlide, 15000)
+            } else {
+                return;
+            }
+        }
     }
 }
