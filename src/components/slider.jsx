@@ -28,10 +28,13 @@ const ReactSlider = styled.div`
   @media screen and(min-width: 900px) {
     display: none;
   }
+  flex-wrap: wrap;
   .bullet {
     width: 8px;
     height: 8px;
     margin: 8px;
+    margin-top: 0;
+    margin-bottom: 0;
     border-radius: 4px;
     background-color: #333333;
   }

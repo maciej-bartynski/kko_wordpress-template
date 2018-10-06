@@ -1,5 +1,35 @@
 $general-desktop-col-gap: 0.9756%;
 
+.h1-spectral-idea {
+    font-family: $spectral;
+    @include spectral-bold;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 55px;
+
+    @media only screen and (min-width: 900px) {
+        font-size: 42px;
+        line-height: 55px;
+        @include spectral-bold;
+    }
+}
+
+.paragraph-spectral-idea {
+    color: $dark;
+    font-family: $sans;
+    @include sans-light;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px){
+        font-size: 20px;
+        line-height: 33px;
+    }
+}
+
 #idea-03{
     margin-top: 40px;
     min-height: 0;

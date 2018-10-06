@@ -1,12 +1,58 @@
+.h1-spectral-kompetencje {
+    font-family: $spectral;
+    @include spectral-bold;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 32px;
+    line-height: 55px;
+    @media only screen and (min-width: 900px) {
+        font-size: 42px;
+        line-height: 70px;
+        @include spectral-bold;
+    }
+}
+
+.h2-spectral-kompetencje {
+    font-family: $spectral;
+    @include spectral-bold;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    line-height: 40px;
+    @media only screen and (min-width: 900px) {
+        font-size: 24px;
+        line-height: 40px;
+        @include spectral-bold;
+    }
+}
+
+.item-sans-kompetencje {
+    font-family: $sans;
+    @include sans-regular;
+    color: $dark;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    line-height: 26px;
+    @media only screen and (min-width: 900px) {
+        font-size: 16px;
+        line-height: 26px;
+        @include sans-regular;
+    }
+}
+
 #kompetencje-04{
     width:100%;
-    margin-top: 2vw;
+    margin-top: 40px;
     @media screen and (min-width: 900px){
         margin-top: 0;
     }
     .kompetencje-04_title {
         text-align: center;
         width: 100%;
+        margin-bottom: 2.13%;
     }
     .kompetencje-04_slider--positioner {
         .img--positioner{
@@ -36,21 +82,20 @@
 //react slider
 .kompetencje-04_slider--positioner{
     width: 100%;
-    margin-top: 2.5vw;
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
-    
+    padding-bottom: 70px;
     .kompetencje-04_slider--container {
         width: 400%;
         padding: 0;
         grid-template-columns: repeat(4, 20%);
         grid-column-gap: 1.25%;
         left: 10%;
+        margin-bottom: 44px;
         .kompetencje-04_slider--item {
             box-sizing: border-box;
-            padding: 0;
-            padding-bottom: 70px; 
+            padding: 0; 
         }
     }
 }
@@ -64,14 +109,14 @@
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr; 
         padding-left: $general-desktop-margin;
-        grid-column-gap: 1vw;
+        grid-column-gap: 1.96%;
         .kompetencje-04_slider--container {
             width: 100%;
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
-            grid-row-gap: 0.83vw;
-            grid-column-gap: 0.83vw;
+            grid-row-gap: 16px;
+            grid-column-gap: 1.96%;
             position: static;
             margin: 0 auto;
             .kompetencje-04_slider--item {

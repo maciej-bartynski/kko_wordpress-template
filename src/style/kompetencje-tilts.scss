@@ -1,153 +1,53 @@
 $mobile-slider-gap: 11vw;
 $mobile-slider-half-gap: 5.5vw;
-/*
-.in-section--positioner {
-    width: 400%;
-    display: grid;
-    grid-template-rows: auto;
-    grid-template-columns: 1fr;
-    overflow: hidden;
 
-    .tilt--positioner {
-        position: relative;
-        top: 0;
-        left: 0;
-        transition: all 600ms;
-        padding: 0 $mobile-slider-half-gap 75px $mobile-slider-half-gap;
-        display: grid;
-        width: 100%;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: auto;
-        grid-column-gap: $mobile-slider-gap;
-
-        .tilt--container {
-            @include tilt-basic-shadow;
-            background-color: $light;
-            padding: 0 16px;
-            display: grid;
-            grid-template-columns: 100%;
-            grid-template-rows: 1.21fr 1.94fr 1.40fr;
-
-            @media only screen and (min-width: 900px) {
-                grid-template-rows: 1.21fr 1.94fr auto;
-            }
-
-            .tilt-title {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                width: 70%;
-                height: 100%;
-                text-align: center;
-                margin: 0 auto;
-            }
-
-            ul {
-                list-style: disc;
-                margin: 0 auto;
-                padding: 0;
-
-                li {
-                    margin: 0;
-                    padding: 0;
-                    font-size: 200%;
-                    color: $dark;
-                }
-
-                width: 200px;
-            }
-
-            a {
-                margin: 26px auto 26px auto;
-            }
-        }
-    }
-}
-
-@media only screen and (min-width: 900px) {
-    .in-section--positioner {
-        width: 100%;
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 1fr 1fr;
-        grid-column-gap: 16px;
-        padding-left: $general-desktop-margin;
-
-        .tilt--positioner {
-            position: static;
-            padding: 0 0 100px 0;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: auto auto;
-            grid-row-gap: 16px;
-            grid-column-gap: 16px;
-
-            .tilt--container {
-                @include tilt-basic-shadow;
-                position: relative;
-                background-color: $light;
-                padding: 0 16px;
-
-                &:nth-of-type(1) {
-                    z-index: 1;
-                }
-
-                &:nth-of-type(2) {
-                    z-index: 1;
-                }
-
-                &:nth-of-type(3) {
-                    z-index: 2;
-                }
-
-                &:nth-of-type(4) {
-                    z-index: 2;
-                }
-            }
-        }
-    }
-}
-*/
 .kompetencje-tilt--container {
     @include tilt-basic-shadow;
     background-color: $light;
-    padding: 0 16px;
+    padding: 7.8% 0 0 0;
     display: grid;
     height: 100%;
+    width: 100%;
     grid-template-columns: 100%;
-    grid-template-rows: 1.21fr 1.94fr 1.40fr;
+    grid-template-rows: 2.02fr 4.125fr min-content 0.5fr;
+
+    border-radius: 5px;
 
     @media only screen and (min-width: 900px) {
         grid-template-rows: 1.21fr 1.94fr auto;
     }
 
     .tilt-title {
+        text-align: center;
+        width: 100%;
+        padding: 0 10%;
         display: flex;
         justify-content: center;
         align-items: center;
-        width: 70%;
-        height: 100%;
-        text-align: center;
-        margin: 0 auto;
     }
 
     ul {
         list-style: disc;
-        margin: 0 auto;
-        padding: 0;
-
+        margin: 0;
+        width: 100%;
+        min-width: 200px;
+        padding: 0 5% 0 20%;
+        @media screen and (min-width: 400px){
+            padding: 0 10% 0 30%;
+        }
         li {
             margin: 0;
             padding: 0;
             font-size: 200%;
             color: $dark;
+            &:last-of-type {
+                margin-bottom: 10px;
+            }
         }
-
-        width: 200px;
     }
 
     a {
-        margin: 26px auto 26px auto;
+        margin: 0 auto 20px auto;
     }
 }
 
@@ -156,7 +56,14 @@ $mobile-slider-half-gap: 5.5vw;
         @include tilt-basic-shadow;
         position: relative;
         background-color: $light;
-        padding: 0 16px;
+        padding: 10% 5% 0 5%;
+        grid-template-rows: 1.1323fr 3.029fr 1fr;
+
+        ul {
+            width: 200px;
+            margin: 0 auto;
+            padding: 0;
+        }
 
         &:nth-of-type(1) {
             z-index: 1;
