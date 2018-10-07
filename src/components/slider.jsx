@@ -121,10 +121,14 @@ export class Slider extends React.Component {
         let slider = document.querySelector(this.props.movingItem);
         let childrens = slider.querySelectorAll(".react-slider--item").length;
         let width = childrens*100+'%';
+        var gridCols = "repeat("+childrens+", 80vw)";
+        if (this.props.nameClass === 'portfolio' || this.props.nameClass ==='corpusportfolio'){
+            gridCols = "repeat(" + childrens + ", 1fr)";
+        }
 
         var style = document.createElement('style');
         style.type = 'text/css';
-        style.innerHTML = "@media screen and (max-width: 899px) { .dynamicWidth"+key+" { width: "+width+"; }}";
+        style.innerHTML = "@media screen and (max-width: 899px) { .dynamicWidth"+key+" { width: "+width+"; grid-template-columns: "+gridCols+";}}";
         slider.classList.add("dynamicWidth" + key);
         document.getElementsByTagName('head')[0].appendChild(style);
     }

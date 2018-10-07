@@ -51,7 +51,7 @@
             }
         }
     }
-    //hir gous slajder
+    
     @media only screen and (min-width: 900px){
         .corpus-portfolio_navi--positioner {
             width: 100%;
@@ -122,7 +122,7 @@
     margin-top: 15.55vw;
     .corpus-portfolio_projects--container {
         //width: 600%;
-        grid-template-columns: repeat(6, 16.66%);
+        //grid-template-columns: repeat(6, 16.66%);
         .corpus-portfolio_projects--item {
             box-sizing: border-box;
         }
@@ -137,6 +137,11 @@
         .corpus-portfolio_projects--container {
             width: 85.33%;
             padding: 0 8.33%;
+
+            display: -ms-grid;
+            -ms-grid-columns: 50% 50%;
+            -ms-grid-rows: auto;
+            
             display: grid;
             grid-template-columns: 50% 50%;
             grid-template-rows: auto;

@@ -5,6 +5,9 @@
     overflow-x: hidden;
     .react-slider--container {
         //width must be set = children amount multiplied by 100%; it slides
+        display: -ms-grid;
+        -ms-grid-rows: auto;
+        
         display: grid;
         grid-template-rows: auto;
         position: relative;

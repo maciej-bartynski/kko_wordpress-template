@@ -101,9 +101,7 @@
     width: 100%;
     margin-top: 2.5vw;
     .corpus-oferta_slider--container {
-        //width: 400%;
-        grid-template-columns: repeat(4, 20%);
-        grid-column-gap: 1.25%;
+        grid-column-gap: 5vw;
         left: 10%;
         .corpus-oferta_slider--item {
             box-sizing: border-box;
@@ -124,10 +122,18 @@
         }
         .corpus-oferta_slider--container {
             width: 100%;
+
+            display: -ms-grid;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr;
+            -ms-grid-rows: auto;
+
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto auto;
             @media only screen and (min-width: 1350px){
+                -ms-grid-columns: 1fr 1fr 1fr 1fr;
+                -ms-grid-rows: auto;
+
                 grid-template-columns: 1fr 1fr 1fr 1fr;
                 grid-template-rows: auto;
             }

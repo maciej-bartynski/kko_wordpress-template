@@ -10,17 +10,25 @@
     justify-content: flex-start;
     align-items: center;
 
+    display: -ms-grid;
+    -ms-grid-columns: auto;
+    -ms-grid-rows: auto auto;
+
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     
     
     .footer-08--container{
+        -ms-grid-row: 1;
+
         margin: 0 auto;
         grid-column-gap: 16px;
     }
 
     .footer-08--bottom-container{
+        -ms-grid-row: 2;
+
         color: $twilight;
         text-align: center;
         margin: 20px 0;
@@ -76,14 +84,34 @@
 //desktop
 #footer-08 .footer-08--container {
     @media only screen and (min-width: 900px){
+
+        display: -ms-grid;
+        -ms-grid-columns: 2fr 2fr 2fr 5fr;
+        -ms-grid-rows: auto;
+
         display: grid;
         padding-left: 5.33%;
         grid-template-columns: 2fr 2fr 2fr 5fr;
         grid-template-rows: auto;
+
+        .footer-08--item {
+            &:nth-of-type(1){
+                -ms-grid-column:1;
+            }
+            &:nth-of-type(2) {
+                -ms-grid-column:2;
+            }
+            &:nth-of-type(3) {
+                -ms-grid-column:3;
+            }
+        }
+
         .footer-08_title {
             margin: 15px 0;
         }
         .footer-08_socjal-media--item{
+            -ms-grid-column:4;
+
             padding-left: 13.32%;
         }
     }

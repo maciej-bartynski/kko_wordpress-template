@@ -67,10 +67,12 @@
             .img--positioner{
                 position: relative;
                 z-index: -1;
+                -ms-grid-column: 2;
                 .img--container{
                     position: absolute;
                     z-index: 0;
-                    bottom: 0;
+                    bottom: 50%;
+                    margin-bottom: -50%;
                     right: 0;
                     width: 100%;
                 }
@@ -82,15 +84,18 @@
 //react slider
 .kompetencje-04_slider--positioner{
     width: 100%;
+
+    display: -ms-grid;
+    -ms-grid-rows: auto;
+    -ms-grid-columns: 100%;
+
     display: grid;
     grid-template-rows: auto;
     grid-template-columns: 100%;
     padding-bottom: 70px;
     .kompetencje-04_slider--container {
-        //width: 400%;
         padding: 0;
-        grid-template-columns: repeat(4, 20%);
-        grid-column-gap: 1.25%;
+        grid-column-gap: 5vw;
         left: 10%;
         margin-bottom: 44px;
         .kompetencje-04_slider--item {
@@ -105,6 +110,11 @@
         width: 100%;
         margin-top: 2.5vw;
         overflow: visible;
+
+        display: -ms-grid;
+        -ms-grid-rows: auto;
+        -ms-grid-columns: 1fr 1fr;
+
         display: grid;
         grid-template-rows: auto;
         grid-template-columns: 1fr 1fr; 
@@ -112,17 +122,41 @@
         grid-column-gap: 1.96%;
         .kompetencje-04_slider--container {
             width: 100%;
+
+            display: -ms-grid;
+            -ms-grid-rows: auto;
+            -ms-grid-columns: 1fr 1fr;
+
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             grid-row-gap: 16px;
+
             grid-column-gap: 1.96%;
             position: static;
             margin: 0 auto;
             .kompetencje-04_slider--item {
                 box-sizing: border-box;
                 padding: 0;
+               /*&:nth-of-type(1){
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 1;
+                }
+                &:nth-of-type(2){
+                    -ms-grid-column: 2;
+                    -ms-grid-row: 1;
+                }
+                &:nth-of-type(3){
+                    -ms-grid-column: 1;
+                    -ms-grid-row: 2;
+                }
+                &:nth-of-type(4){
+                    -ms-grid-column: 2;
+                    -ms-grid-row: 2;
+                }*/
             }
         }
     }
 }
+
+

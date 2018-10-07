@@ -30,6 +30,11 @@ $general-desktop-col-gap: 0.9756%;
 #idea-03{
     margin-top: 40px;
     min-height: 0;
+
+    display: -ms-grid;
+    -ms-grid-rows: auto auto;
+    -ms-grid-columns: 100%;
+
     display: grid;
     grid-template-rows: auto auto;
     grid-template-columns: 100%;
@@ -56,7 +61,7 @@ $general-desktop-col-gap: 0.9756%;
     @media only screen and (min-width: 900px){
         background-image: url('./media/desktop/SVG/Ilu-home-idea.svg');
         background-repeat: no-repeat;
-        background-size: 56.77%;
+        background-size: 56.77% 100%;
         background-position: left center;
         margin-top: 7.86%;
         min-height: 43.5vw;
@@ -66,17 +71,28 @@ $general-desktop-col-gap: 0.9756%;
         .idea-03--container{
             width: 100%;
             padding: 0 $general-desktop-margin;
+
+            display: -ms-grid;
+            -ms-grid-rows: min-content auto;
+            -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
             display: grid;
             grid-template-rows: min-content auto;
             grid-template-columns: repeat(12, 1fr);
             grid-column-gap: $general-desktop-col-gap;
             h1{
                 text-align: left;
+
+                -ms-grid-row: 1;
+                -ms-grid-column: 9;
+                -ms-grid-column-span: 3;
+
                 grid-column-start: 8;
                 grid-column-end: 12;
                 margin: 19.56% 0 0 0;
                 max-width: 1920px;
                 @media screen and (max-width: 1300px) {
+                    -ms-grid-column-span: 4;
                     grid-column-end: 13;
                     @media screen and (max-width: 1200px) {
                         text-align: center;
@@ -85,11 +101,17 @@ $general-desktop-col-gap: 0.9756%;
             }
             p{
                 text-align: left;
+
+                -ms-grid-row: 2;
+                -ms-grid-column: 9;
+                -ms-grid-column-span: 3;
+
                 grid-column-start: 8;
                 grid-column-end: 12;
                 margin: 7.46% 0 0 0;
                 max-width: 1920px;
                 @media screen and (max-width: 1300px) {
+                    -ms-grid-column-span: 4;
                     grid-column-end: 13;
                     @media screen and (max-width: 1200px) {
                         text-align: center;
