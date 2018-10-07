@@ -40,6 +40,11 @@
 .corpus-kontakt--positioner{
     @media only screen and (min-width: 900px){
         padding: $general-desktop-margin;
+
+        display: -ms-grid;
+        -ms-grid-columns: 50% 50%;
+        -ms-grid-row: auto auto auto;
+
         display: grid;
         grid-template-columns: 50% 50%;
         grid-template-rows: auto auto auto;
@@ -48,6 +53,10 @@
             padding-right: 16.66%;
             width: 100%;
             text-align: left;
+
+            -ms-grid-row: 1;
+            -ms-grid-column: 1;
+            
             grid-row-start: 1;
             grid-row-end: 2;
             grid-column-start: 1;
@@ -58,6 +67,10 @@
             padding-right: 16.66%;
             width: 100%;
             text-align: left;
+
+            -ms-grid-row: 2;
+            -ms-grid-column: 1;
+
             grid-row-start: 2;
             grid-row-end: 3;
             grid-column-start: 1;
@@ -66,6 +79,10 @@
         .corpus-kontakt_formula {
             padding-left: 16.66%;
             padding-right: 16.66%;
+            
+            -ms-grid-row: 3;
+            -ms-grid-column: 1;
+
             grid-row-start: 3;
             grid-row-end: 4;
             grid-column-start: 1;
@@ -76,6 +93,11 @@
             grid-template-rows: auto auto auto auto auto;
         }
         .corpus-kontakt_canvas--container{
+
+            -ms-grid-row: 1;
+            -ms-grid-row-span: 3;
+            -ms-grid-column: 2;
+
             grid-row-start: 1;
             grid-row-end: 4;
             grid-column-start: 2;

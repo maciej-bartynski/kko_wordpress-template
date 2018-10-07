@@ -107,16 +107,24 @@
 
 @media only screen and (min-width: 900px){
     #corpus-idea {
+        display: -ms-grid;
+        -ms-grid-rows: auto auto;
+        -ms-grid-columns: $general-desktop-margin 8fr 8fr;
+
         display: grid;
         grid-template-rows: auto auto;
         grid-template-columns: $general-desktop-margin 8fr 8fr;
         @media only screen and (min-width: 1200px){
+             -ms-grid-columns: $general-desktop-margin 7fr 8fr;
             grid-template-columns: $general-desktop-margin 7fr 8fr;
             @media only screen and (min-width: 1300px){
+                 -ms-grid-columns: $general-desktop-margin 6fr 8fr;
                 grid-template-columns: $general-desktop-margin 6fr 8fr;
                 @media only screen and (min-width: 1400px) {
+                     -ms-grid-columns: $general-desktop-margin 5fr 8fr;
                     grid-template-columns: $general-desktop-margin 5fr 8fr;
                     @media only screen and (min-width: 1500px) {
+                         -ms-grid-columns: $general-desktop-margin 4fr 8fr;
                         grid-template-columns: $general-desktop-margin 4fr 8fr;
                     }
                 }
@@ -124,6 +132,8 @@
         }
 
         .corpus-idea_description--positioner {
+            -ms-grid-column: 2;
+            
             grid-column-start: 2;
             grid-column-end: 3;
             p,
@@ -133,6 +143,8 @@
         }
 
         .corpus-idea_img--positioner{
+            -ms-grid-column: 3;
+
             grid-column-start: 3;
             grid-column-end: 4;
             padding: 0;
@@ -149,11 +161,20 @@
         .corpus-idea_quotes--positioner {
             padding: 7vw $general-desktop-margin;
 
+            -ms-grid-column: 1;
+            -ms-grid-column-span: 3;
+            -ms-grid-row: 2;
+
             grid-column-start: 1;
             grid-column-end: 4;
         }
 
         .corpus-idea_quotes--positioner {
+
+            display: -ms-grid;
+            -ms-grid-rows: 1fr 2fr;
+            -ms-grid-columns: 1fr 1fr;
+
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 2fr;
@@ -163,6 +184,11 @@
                 min-height: 120px;
                 position: relative;
                 padding: 0 10% 0 5%;
+
+                 -ms-grid-row: 1;
+                  -ms-grid-column: 1;
+                 -ms-grid-column-span: 2;
+
                 grid-row-start:1;
                 grid-row-end: 2;
                 grid-column-start: 1;
@@ -181,6 +207,11 @@
             .corpus-idea_quotes-t-br {
                 width: 100%;
                 position: relative;
+
+                -ms-grid-row: 2;
+                -ms-grid-column: 1;
+                -ms-grid-column-span: 2;
+
                 grid-row-start: 2;
                 grid-row-end: 3;
                 grid-column-start: 1;
@@ -237,6 +268,10 @@
             }
 
             .corpus-idea_quotes--img {
+
+                -ms-grid-row: 2;
+                -ms-grid-column: 2;
+
                 grid-row-start: 2;
                 grid-row-end: 3;
                 grid-column-start: 2;
