@@ -1,26 +1,40 @@
-import $ from 'jquery';
+function take(item){
+    return document.querySelector(item)
+};
 
-$('.navbelt-lang').click(function(){
-    $('.navbelt-lang_dropdown').toggleClass('isActive');
-})
+function cli(item, func) {
+    let el = take(item);
+    el.addEventListener('click', func);
+};
 
-$('.navbelt-lang_dropdown li').click(function (e) {
-    $('.navbelt-lang span').html(`${e.target.innerText} <i class="material-icons">expand_more</i>`);
-})
+cli('.navbelt-lang', ()=>{
+    take('.navbelt-lang_dropdown').classList.contains('isActive')?
+    take('.navbelt-lang_dropdown').classList.remove('isActive'):
+    take('.navbelt-lang_dropdown').classList.add('isActive');
+});
+
+(() => {
+    let items = document.querySelectorAll('.navbelt-lang_dropdown li');
+    let leng = items.length;
+    for (let i=0;i<leng;i++){
+        items[i].addEventListener('click', function(e){
+            take('.navbelt-lang span').innerHTML = `${e.target.innerText} <i class="material-icons">expand_more</i>`;
+        }); 
+    }
+})();
 
 let toggler = 1;
-$('.navbelt-mobile_item--toggler').click(function () {
+cli('.navbelt-mobile_item--toggler', ()=>{
     let icon = ['menu', 'close'];
-    $('.navbelt-mobile_item--toggler .open-close').text(icon[toggler]);
-    toggler? $('.navbelt-mobile--container').addClass('isToggled'): $('.navbelt-mobile--container').removeClass('isToggled');
+    take('.navbelt-mobile_item--toggler .open-close').innerText = icon[toggler];
+    toggler? take('.navbelt-mobile--container').classList.add('isToggled'): take('.navbelt-mobile--container').classList.remove('isToggled');
     toggler = toggler ? 0 : 1;
 })
 
-$(window).scroll(function () {
-    if ($(window).scrollTop()>140){
-        $('#navbar-01 nav').addClass('fixed');
+window.addEventListener('scroll', function(){
+    if (window.scrollY > 140) {
+        take('#navbar-01 nav').classList.add('fixed');
     } else {
-        $('#navbar-01 nav').removeClass('fixed');
+        take('#navbar-01 nav').classList.remove('fixed');
     }
 })
-

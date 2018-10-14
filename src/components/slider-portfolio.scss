@@ -1,0 +1,38 @@
+//react slider
+.react-slider--positioner {
+    overflow-x: hidden;
+    .react-slider--container {
+        position: relative;
+        top:0;
+        transition: left 600ms;
+        .react-slider--item {
+            opacity: 1;//can be removed
+        }
+    }
+}
+
+.react-slider--positioner.portfolio {
+    width: 100%;
+    margin-top: 2.5vw;
+
+    .react-slider--container.portfolio {
+        left: 0;
+        display: flex;
+        flex-direction: row;
+
+        .react-slider--item.portfolio {
+            margin-right: 0;
+
+            &:last-child {
+                margin-right: 0;
+            }
+        }
+
+        .react-slider--item.portfolio {
+            box-sizing: border-box;
+            padding: 0;
+            padding-bottom: 70px;
+            width:100vw;
+        }
+    }
+}

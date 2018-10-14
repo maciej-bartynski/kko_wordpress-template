@@ -1,0 +1,34 @@
+//react slider
+.react-slider--positioner {
+    overflow-x: hidden;
+    .react-slider--container {
+        position: relative;
+        top:0;
+        transition: left 600ms;
+        .react-slider--item {
+            opacity: 1;//can be removed
+        }
+    }
+}
+
+.react-slider--positioner.kompetencje{
+    width: 100%;
+    margin-top: 2.5vw;
+    .react-slider--container.kompetencje {
+        left: 10vw;
+        display: flex;
+        flex-direction: row;
+        .react-slider--item.kompetencje {
+            margin-right: 5vw; 
+            &:last-child{
+                margin-right: 0;
+            }
+        }
+        .react-slider--item.kompetencje {
+            box-sizing: border-box;
+            padding: 0;
+            padding-bottom: 70px; 
+            width: 80vw; 
+        }
+    }
+}

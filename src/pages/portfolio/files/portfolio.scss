@@ -116,25 +116,12 @@
     }
 }
 
-//react slider
-.corpus-portfolio_projects--positioner{
-    width: 100%;
-    margin-top: 15.55vw;
-    .corpus-portfolio_projects--container {
-        //width: 600%;
-        //grid-template-columns: repeat(6, 16.66%);
-        .corpus-portfolio_projects--item {
-            box-sizing: border-box;
-        }
-    }
-}
-
 @media only screen and (min-width: 900px){
-    .corpus-portfolio_projects--positioner{
+    .portfolio.react-slider--positioner.corpus-portfolio_projects--positioner{
         width: 100%;
         margin-top: 6.30vw;
         margin-bottom: 4.16vw;
-        .corpus-portfolio_projects--container {
+        .portfolio.react-slider--container.corpus-portfolio_projects--container {
             width: 85.33%;
             padding: 0 8.33%;
 
@@ -149,8 +136,11 @@
             grid-column-gap: 0.83vw;
             position: static;
             margin: 0 auto;
-            .corpus-portfolio_projects--item {
+            .portfolio.react-slider--item.corpus-portfolio_projects--item {
                 box-sizing: border-box;
+                width: auto;
+                padding-bottom: 0;
+
             }
         }
     }

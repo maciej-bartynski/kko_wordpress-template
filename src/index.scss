@@ -1,10 +1,10 @@
-//do not change order of importing: 
-//fonts:
+//do not change order of importing:; 
+//fonts:;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
-//variables
+//variables;
 @import './style/variables.scss';
-//scss components
+//scss components;
 @import './style/button.scss';
 @import './style/titles.scss';
 @import './style/paragraph.scss';
@@ -12,7 +12,11 @@
 @import './style/kompetencje-tilts.scss';
 @import './style/portfolio-tilt.scss';
 @import './style/react-slider.scss';
-//sections
+
+@import './components/bullets.scss';
+@import './components/slider-kompetencje.scss';
+@import './components/slider-portfolio.scss';
+//sections;
 @import './sections/navbar/navbar.scss';
 @import './sections/header/header.scss';
 @import './sections/section-idea/section-idea.scss';
@@ -21,14 +25,14 @@
 @import './sections/section-agencja/section-agencja.scss';
 @import './sections/section-kontakt/section-kontakt.scss';
 @import './sections/footer/footer.scss';
-//pages
+//pages;
 @import './pages/oferta/files/oferta.scss';
 @import './pages/idea/files/idea.scss';
 @import './pages/portfolio/files/portfolio.scss';
 @import './pages/kontakt/files/kontakt.scss';
 
 
-//global:
+//global:;
 
 * {
     box-sizing: border-box;

@@ -39,12 +39,12 @@ $slider_cover: #FFD448;
     }
 
     @media only screen and (min-width: 900px){
-        .portfolio-05_projects--positioner{
+        .portfolio.react-slider--positioner.portfolio-05_projects--positioner{
             width: 100%;
             margin-top: 2.08vw;
             margin-bottom: 4.16vw;
             padding: 0 $general-desktop-margin;
-            .portfolio-05_projects--container {
+            .portfolio.react-slider--container.portfolio-05_projects--container {
                 width: 100%;
                 padding: 0;
 
@@ -59,8 +59,11 @@ $slider_cover: #FFD448;
                 grid-column-gap: 0.83vw;
                 position: static;
                 margin: 0 auto;
-                .portfolio-05_projects--item {
+                .portfolio.react-slider--item.portfolio-05_projects--item {
                     box-sizing: border-box;
+                    width: auto;
+                    margin-right: 0;
+                    padding-bottom: 0;
                     /*&:nth-of-type(1){
                         -ms-grid-column: 1;
                         -ms-grid-row: 1;
