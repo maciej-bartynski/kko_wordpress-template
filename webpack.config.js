@@ -11,7 +11,8 @@ module.exports = {
         oferta: ["@babel/polyfill", "./src/pages/oferta/oferta.js"],
         portfolio: ["@babel/polyfill", "./src/pages/portfolio/portfolio.js"],
         idea: ["@babel/polyfill", "./src/pages/idea/idea.js"],
-        kontakt: ["@babel/polyfill", "./src/pages/kontakt/kontakt.js"]
+        kontakt: ["@babel/polyfill", "./src/pages/kontakt/kontakt.js"],
+        portfoliopost: ["@babel/polyfill", "./src/pages/portfolio-post/portfolio-post.js"]
     },
     output: {
         path: path.resolve(__dirname, 'docs'),
@@ -79,6 +80,11 @@ module.exports = {
             template: "./src/pages/kontakt/kontakt.html",
             filename: "kontakt.html",
             chunks: ["kontakt"],
+        }),
+        new HtmlWebPackPlugin({
+            template: "./src/pages/portfolio-post/portfolio-post.html",
+            filename: "portfolio-post.html",
+            chunks: ["portfoliopost"],
         })
     ]
 }
