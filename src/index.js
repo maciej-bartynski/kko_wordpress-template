@@ -1,49 +1,32 @@
-//my scss (do not change order of importing styles!)
 import './index.scss';
-//scripts
-//import './components/react.jsx';
-import {slider} from './components/slider-b';
-
+import {
+    slider
+} from './components/slider';
+import {
+    sliderPositions
+} from './components/slider';
 import './sections/navbar/navbar.js';
-//manual file loader:
-import './deleteThisPage.html';
-import {countTiltsAndSetGridCells} from './ms-grid-compatibility/portfolio-desktop-tilts.js';
+import {
+    countTiltsAndSetGridCells
+} from './ms-grid-compatibility/portfolio-desktop-tilts.js';
+
+import {sectionsSoftSlideEffect} from './sections/sections-soft-slide.js';
 
 countTiltsAndSetGridCells(3, ".portfolio-05_projects--container");
 countTiltsAndSetGridCells(2, ".kompetencje-04_slider--container");
 
-var kompetencjePositions = (parentCSSClass) => {
-    const parent = document.querySelector(parentCSSClass);
-    const amount = parent.querySelectorAll(".react-slider--item").length;
-    let array = [];
-    for (let i = 0; i < amount; i++) {
-        array.push(10 + (i * -85));
-    };
-    return array;
-}
-
-slider(
+slider( //portfolio
     0,
-    kompetencjePositions(".kompetencje-04_slider--container.react-slider--container"),
+    sliderPositions(".kompetencje-04_slider--container.react-slider--container", false),
     ".kompetencje-04_slider--positioner",
     ".kompetencje-04_slider--container",
     ".react-slider.kompetencje",
     true
 );
 
-var sliderPositions = (parentCSSClass) => {
-    const parent = document.querySelector(parentCSSClass);
-    const amount = parent.querySelectorAll(".react-slider--item").length;
-    let array = [];
-    for (let i = 0; i < amount; i++) {
-        array.push(i * -100);
-    }
-    return array;
-}
-
-slider(
+slider( //kompetencje
     0,
-    sliderPositions(".portfolio-05_projects--container.react-slider--container"),
+    sliderPositions(".portfolio-05_projects--container.react-slider--container", true),
     ".portfolio-05_projects--positioner",
     ".portfolio-05_projects--container",
     ".react-slider.portfolio",

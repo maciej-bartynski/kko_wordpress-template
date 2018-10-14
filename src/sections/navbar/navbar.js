@@ -1,8 +1,8 @@
-function take(item){
+function take(item){//indead of jquery: $(selector)
     return document.querySelector(item)
 };
 
-function cli(item, func) {
+function cli(item, func) { //indead of jquery: $(selector).click(callback)
     let el = take(item);
     el.addEventListener('click', func);
 };

@@ -1,9 +1,7 @@
 import './../../index.scss';
 import './../../sections/navbar/navbar.js';
 import {countTiltsAndSetGridCells} from './../../ms-grid-compatibility/portfolio-desktop-tilts.js';
-
-//import './files/portfolio.jsx'
-import {slider} from './../../components/slider-b.js';
+import {slider} from './../../components/slider.js';
 
 var sliderPositions = (parentCSSClass) => {
     const parent = document.querySelector(parentCSSClass);

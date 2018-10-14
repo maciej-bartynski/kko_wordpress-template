@@ -1,4 +1,10 @@
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);a.button, div.button {
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext);@import url(https://fonts.googleapis.com/icon?family=Material+Icons);@charset "UTF-8";
+/*
+Theme Name: WordPress for KKO 1 
+Author: Maciej Bartyński 
+Version: 1.1
+*/
+a.button, div.button {
   width: 260px;
   height: 48px;
   border-radius: 30px;
@@ -15,6 +21,10 @@
   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   cursor: pointer; }
+  @media only screen and (max-width: 1200px) {
+    a.button, div.button {
+      width: 100%;
+      max-width: 216px; } }
   a.button:hover, div.button:hover {
     background-color: #42a319;
     box-shadow: 0px 8px 12px 0px rgba(0, 0, 0, 0.1);
@@ -253,19 +263,25 @@ a.social-button {
     position: relative;
     background-color: #FFFFFF;
     padding: 10% 5% 0 5%;
-    grid-template-rows: 1.1323fr 3.029fr 1fr; }
+    grid-template-rows: 1.1323fr 3.029fr 1fr;
+    z-index: 1; }
+    .kompetencje-tilt--container:hover {
+      transition: all 200ms;
+      -webkit-transform: scale(1.02);
+              transform: scale(1.02); }
     .kompetencje-tilt--container ul {
       width: 200px;
       margin: 0 auto;
-      padding: 0; }
-    .kompetencje-tilt--container:nth-of-type(1) {
-      z-index: 1; }
-    .kompetencje-tilt--container:nth-of-type(2) {
-      z-index: 1; }
-    .kompetencje-tilt--container:nth-of-type(3) {
-      z-index: 2; }
-    .kompetencje-tilt--container:nth-of-type(4) {
-      z-index: 2; } }
+      padding: 0; } }
+    @media only screen and (min-width: 900px) and (max-width: 1200px) {
+      .kompetencje-tilt--container ul {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center; }
+        .kompetencje-tilt--container ul li {
+          max-width: 100%;
+          text-align: center; } }
 
 .portfolio-tilt--container {
   position: relative;
@@ -2146,12 +2162,16 @@ a.social-button {
   .corpus-kontakt--positioner .corpus-kontakt_canvas--container {
     overflow: hidden;
     touch-action: none;
-    position: relative; }
+    position: relative;
+    width: 100%;
+    height: 100%; }
     .corpus-kontakt--positioner .corpus-kontakt_canvas--container img.hands-bg {
       position: absolute;
       top: 0;
       left: 0;
-      width: 100%; }
+      width: 100%;
+      height: 100%;
+      z-index: 0; }
 
 @media only screen and (min-width: 900px) {
   .corpus-kontakt--positioner {
@@ -2349,3 +2369,14 @@ body {
 @media only screen and (min-width: 900px) {
   .react-slider {
     display: none; } }
+
+@media only screen and (min-width: 900px) {
+  section {
+    transition: -webkit-transform 1500ms;
+    transition: transform 1500ms;
+    transition: transform 1500ms, -webkit-transform 1500ms;
+    -webkit-transform: translateY(1vh);
+            transform: translateY(1vh); }
+    section.soft-slide {
+      -webkit-transform: translateY(-1vh);
+              transform: translateY(-1vh); } }

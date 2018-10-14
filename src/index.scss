@@ -1,3 +1,9 @@
+/*
+Theme Name: WordPress for KKO 1 
+Author: Maciej Bartyński 
+Version: 1.1
+*/
+
 //do not change order of importing:; 
 //fonts:;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext');
@@ -11,8 +17,6 @@
 @import './style/social-button.scss';
 @import './style/kompetencje-tilts.scss';
 @import './style/portfolio-tilt.scss';
-@import './style/react-slider.scss';
-
 @import './components/bullets.scss';
 @import './components/slider-kompetencje.scss';
 @import './components/slider-portfolio.scss';
@@ -31,7 +35,6 @@
 @import './pages/portfolio/files/portfolio.scss';
 @import './pages/kontakt/files/kontakt.scss';
 
-
 //global:;
 
 * {
@@ -45,5 +48,16 @@ body {
 @media only screen and (min-width: 900px){
     .react-slider {
         display: none;
+    }
+}
+
+//soft slide effect
+section {
+    @media only screen and (min-width: 900px) {
+        transition: transform 1500ms;
+        transform: translateY(1vh);
+        &.soft-slide{
+            transform: translateY(-1vh);
+        }
     }
 }

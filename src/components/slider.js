@@ -56,7 +56,7 @@ export const slider = (initialPosition, allowedPositions, highestUniqueParent, m
         document.querySelector(bul).querySelectorAll('.bullet')[num].classList.add('activebullet');
         timer = setTimeout(
             ()=>{automaticSlide(num+1)},
-            3000
+            15000
         );
     }
 
@@ -94,6 +94,21 @@ export const slider = (initialPosition, allowedPositions, highestUniqueParent, m
     sliderLength();
     mountBullets();
     swipeEventDispatcher();
-    setTimeout(()=>{clickHandler(null, ini+1)});
+    setTimeout(()=>{clickHandler(null, ini+1)}, 15000);
 }
 
+export var sliderPositions = (parentCSSClass, bool) => {
+    const parent = document.querySelector(parentCSSClass);
+    const amount = parent.querySelectorAll(".react-slider--item").length;
+    let array = [];
+    if (bool===true){ //if portfolio
+        for (let i = 0; i < amount; i++) {
+            array.push(i * -100);
+        }
+    } else { //if kompetencje
+        for (let i = 0; i < amount; i++) {
+            array.push(10 + (i * -85));
+        };
+    }
+    return array;
+}

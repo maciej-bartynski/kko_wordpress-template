@@ -11,7 +11,7 @@ module.exports = {
         oferta: ["@babel/polyfill", "./src/pages/oferta/oferta.js"],
         portfolio: ["@babel/polyfill", "./src/pages/portfolio/portfolio.js"],
         idea: ["@babel/polyfill", "./src/pages/idea/idea.js"],
-        kontakt: ["@babel/polyfill", "./src/pages/kontakt/kontakt.js"],
+        kontakt: ["@babel/polyfill", "./src/pages/kontakt/kontakt.js"]
     },
     output: {
         path: path.resolve(__dirname, 'docs'),

@@ -2,8 +2,8 @@ import './../../index.scss';
 import './../../sections/navbar/navbar.js';
 import {countTiltsAndSetGridCells} from './../../ms-grid-compatibility/portfolio-desktop-tilts.js';
 
-//import './files/oferta.jsx';
-import {slider} from './../../components/slider-b.js';
+
+import {slider} from './../../components/slider.js';
 countTiltsAndSetGridCells(4, ".corpus-oferta_slider--container");
 
 var kompetencjePositions = (parentCSSClass) => {
