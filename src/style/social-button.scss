@@ -4,16 +4,22 @@ a.social-button {
     display: block;
     color: $light;
     background: $light;
-    background-image: url('media/desktop/SVG/icon-socialmedia.svg');
     background-size: cover;
     background-repeat: no-repeat;
-    &.fb {
-        background-position: left bottom;
+    position: relative;
+    img {
+        width: 100%;
+        height: 100%;
     }
-    &.be {
-        background-position: center bottom;
-    }
-    &.in {
-        background-position: right bottom;
+    i {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
     }
 }

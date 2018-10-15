@@ -26,6 +26,25 @@
     }
 }
 
+.paragraph a {
+    color: $awaits;
+    font-family: $serif;
+    @include serif-regular;
+    font-size: 16px;
+    line-height: 26px;
+    margin: 0;
+    padding:0;
+    @media only screen and (min-width: 900px){
+        font-size: 20px;
+        line-height: 33px;
+    }
+    &:hover, &:visited, &:active, & {
+        text-decoration: none;
+        color: $awaits;
+        
+    }
+}
+
 .paragraph-italic {
     color: $dark;
     font-family: $sans;

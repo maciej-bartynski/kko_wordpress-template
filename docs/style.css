@@ -207,15 +207,8 @@ a.social-button {
   display: block;
   color: #FFFFFF;
   background: #FFFFFF;
-  background-image: url(media/icon-socialmedia.svg);
   background-size: cover;
   background-repeat: no-repeat; }
-  a.social-button.fb {
-    background-position: left bottom; }
-  a.social-button.be {
-    background-position: center bottom; }
-  a.social-button.in {
-    background-position: right bottom; }
 
 .kompetencje-tilt--container {
   box-shadow: 0px 50px 40px 0px rgba(0, 0, 0, 0.1);
@@ -742,7 +735,6 @@ a.social-button {
 @media screen and (min-width: 900px) and (orientation: landscape) {
   #header-02 {
     width: 100%;
-    background-image: url(media/ilu-hero.svg);
     background-size: contain;
     background-position: bottom right;
     background-repeat: no-repeat;
@@ -916,7 +908,6 @@ a.social-button {
 
 @media only screen and (min-width: 900px) {
   #idea-03 {
-    background-image: url(media/Ilu-home-idea.svg);
     background-repeat: no-repeat;
     background-size: 56.77% 100%;
     background-position: left center;
@@ -1355,13 +1346,8 @@ a.social-button {
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto auto auto; }
   #kontakt-07 .kontakt-07_canvas--container {
-    overflow: hidden;
-    touch-action: none;
-    position: relative; }
+    overflow: hidden; }
     #kontakt-07 .kontakt-07_canvas--container img.hands-bg {
-      position: absolute;
-      top: 0;
-      left: 0;
       width: 100%; }
 
 @media only screen and (min-width: 900px) {
@@ -1420,13 +1406,8 @@ a.social-button {
       grid-row-end: 4;
       grid-column-start: 2;
       grid-column-end: 3;
-      overflow: hidden;
-      touch-action: none;
-      position: relative; }
+      overflow: hidden; }
       #kontakt-07 .kontakt-07_canvas--container img.hands-bg {
-        position: absolute;
-        top: 0;
-        left: 0;
         width: 100%; } }
 
 #kontakt-07 form input {
@@ -1611,6 +1592,9 @@ a.social-button {
       margin: 0;
       padding: 0;
       text-align: center; }
+      @media screen and (min-width: 900px) {
+        #footer-08 .footer-08--container ul li {
+          width: 100%; } }
       #footer-08 .footer-08--container ul li a {
         text-decoration: none;
         color: inherit;
@@ -1618,16 +1602,16 @@ a.social-button {
         #footer-08 .footer-08--container ul li a:hover, #footer-08 .footer-08--container ul li a:active, #footer-08 .footer-08--container ul li a:visited {
           color: inherit;
           text-decoration: none; }
-  #footer-08 .footer-08--container ul.footer-08_socjal-media {
+  #footer-08 .footer-08--container ul.footer-08_social-media {
     flex-direction: row;
     justify-content: center; }
-    #footer-08 .footer-08--container ul.footer-08_socjal-media li {
+    #footer-08 .footer-08--container ul.footer-08_social-media li {
       margin-right: 12px;
       width: 60px;
       height: 60px; }
-      #footer-08 .footer-08--container ul.footer-08_socjal-media li a {
+      #footer-08 .footer-08--container ul.footer-08_social-media li a {
         margin: 0; }
-      #footer-08 .footer-08--container ul.footer-08_socjal-media li:last-of-type {
+      #footer-08 .footer-08--container ul.footer-08_social-media li:last-of-type {
         margin-right: 0; }
 
 @media screen and (min-width: 700px) {
@@ -1657,7 +1641,7 @@ a.social-button {
       align-items: flex-start; }
       #footer-08 .footer-08--container ul li {
         text-align: left; }
-    #footer-08 .footer-08--container ul.footer-08_socjal-media {
+    #footer-08 .footer-08--container ul.footer-08_social-media {
       flex-direction: row;
       justify-content: flex-start; } }
 
@@ -2166,11 +2150,9 @@ a.social-button {
     width: 100%;
     height: 100%; }
     .corpus-kontakt--positioner .corpus-kontakt_canvas--container img.hands-bg {
-      position: absolute;
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
       z-index: 0; }
 
 @media only screen and (min-width: 900px) {
@@ -2359,6 +2341,37 @@ a.social-button {
       background: #FFFFFF; }
   #corpus-kontakt form div {
     margin: 13px auto 26px 0; } }
+
+#portfolio-post {
+  width: 100%;
+  padding: 1vh 20vh 1vh 20vh; }
+  #portfolio-post .portfolio-post--img {
+    float: left;
+    margin: 0 5% 5% 0; }
+  #portfolio-post .portfolio-post--subnavi {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none; }
+  #portfolio-post .portfolio-post--title {
+    width: 100%;
+    color: #A6A6A6; }
+  #portfolio-post .portfolio-post--tags {
+    width: 100%; }
+    #portfolio-post .portfolio-post--tags span {
+      display: inline-block;
+      margin: 0 30px 0 0; }
+  #portfolio-post .portfolio-post--divider {
+    width: 100%; }
+    #portfolio-post .portfolio-post--divider .vertical-line {
+      border-bottom: black solid 1px;
+      width: 200px;
+      display: inline-block; }
+  #portfolio-post .portfolio-post--paragraph {
+    width: 100%; }
 
 * {
   box-sizing: border-box; }

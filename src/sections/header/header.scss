@@ -58,6 +58,7 @@ $general-desktop-col-gap: 0.9756%;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto;
+
     .header-02--container {  
         width: 100%;
 
@@ -129,7 +130,7 @@ $general-desktop-col-gap: 0.9756%;
 #header-02 {
     @media screen and (min-width: 900px) and (orientation: landscape) {
         width: 100%;
-        background-image: url('./media/desktop/SVG/ilu-hero.svg');
+        //background-image: url('./media/desktop/SVG/ilu-hero.svg');
         background-size: contain;
         @media screen and (max-width: 1662px){
                 background-size:  65%;

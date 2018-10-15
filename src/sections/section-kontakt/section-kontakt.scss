@@ -20,13 +20,9 @@
     }
     .kontakt-07_canvas--container{
         overflow: hidden;
-        touch-action: none;
-        //cursor: none;
-        position: relative;
+        
         img.hands-bg{
-            position: absolute;
-            top: 0;
-            left: 0;
+            
             width: 100%;
         }
     }
@@ -103,14 +99,11 @@
             grid-column-start: 2;
             grid-column-end: 3;
             overflow: hidden;
-            touch-action: none;
-            //cursor: none;
-            position: relative;
+                        
             img.hands-bg{
-                position: absolute;
-                top: 0;
-                left: 0;
+            
                 width: 100%;
+                
             }
         }
     }

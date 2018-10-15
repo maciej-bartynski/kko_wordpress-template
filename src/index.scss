@@ -8,6 +8,7 @@ Version: 1.1
 //fonts:;
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:600|Source+Sans+Pro:300,400,400i,600,700|Source+Serif+Pro:400,600,700|Spectral:600,700&subset=latin-ext');
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons');
+
 //variables;
 @import './style/variables.scss';
 //scss components;
@@ -55,10 +56,10 @@ body {
 //soft slide effect
 section {
     @media only screen and (min-width: 900px) {
-        transition: transform 1500ms;
-        transform: translateY(1vh);
+        transition: transform 1000ms;
+        transform: translateY(1.5vh);
         &.soft-slide{
-            transform: translateY(-1vh);
+            transform: translateY(-1.5vh);
         }
     }
 }
